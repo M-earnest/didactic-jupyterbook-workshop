@@ -1,0 +1,34 @@
+[
+    {
+        "question": "Which of these are used to create formatted text in Jupyter notebooks?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Wiki markup",
+                "correct": false,
+                "feedback": "Incorrect. Jupyter uses Markdown."
+            },
+            {
+                "answer": "Markdown",
+                "correct": true,
+                "feedback": "Correct! Markdown is the standard."
+            }
+        ]
+    },
+    {
+        "question": "Which library is used to render these interactive quizzes?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Matplotlib",
+                "correct": false,
+                "feedback": "No, that's for plotting."
+            },
+            {
+                "answer": "jupyterquiz",
+                "correct": true,
+                "feedback": "Exactly."
+            }
+        ]
+    }
+]
