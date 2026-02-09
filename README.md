@@ -2,10 +2,10 @@
 
 # What's in this repository?
 
-This repository contains all information needed for the group session on “Working collaborative with Jupyter Book: An open-source tool to create open and flexible teaching/learning materials” in the workshop "Openness in the Higher Education Classroom" on how to create interactive content with Jupyter Books. It's adapted from this online tutorial: https://github.com/DiLER-Digitell/tutorial_jupyter_books
+This repository contains all information needed for the group session on “XXX" on how to create interactive content with Jupyter Books. It's adapted from this online tutorial: https://github.com/DiLER-Digitell/tutorial_jupyter_books
 
-- Find the website for the group session here: https://luciebinder.github.io/ws-openness-2025
-- Find the course template, that we will use in the group session here: https://github.com/luciebinder/course-template-minimal
+- Find the website for the group session here:xxx
+- Find the course template, that we will use in the group session here: [https://github.com/luciebinder/course-template-minimal](https://github.com/DiLER-Digitell/course-template-minimal)
 
 
 ## Who are we?
