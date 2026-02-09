@@ -1,0 +1,715 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Quick Setup Guide &#8212; Group session: Working collaborative with Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/tabs.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/4_additional/quick_tutorial_ws';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Wrap-Up and Feedback" href="../../general-information/wrap-up.html" />
+    <link rel="prev" title="Now It’s Your Turn!" href="../../general-information/assignment.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../general-information/index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Group session: Working collaborative with Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../general-information/index.html">
+                    Welcome!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">0. Preparation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Setting up a GitHub account</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Group Session</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../general-information/why_oer.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-information/didactic.html">Didactic Aspects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-information/framework.html">Our Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-information/why_jb.html">Why Use Jupyter Book?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Independent Work</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../general-information/assignment.html">Now It’s Your Turn!</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quick Setup Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Wrap-Up</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../general-information/wrap-up.html">Wrap-Up and Feedback</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-depth Tutorial</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../1_github/intro.html">Getting Started With GitHub</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_github/account.html">Setting Up a GitHub Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_github/project.html">Creating Your Course Repository on GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_github/template.html">Exploring and Customizing the Template Repository</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../2_host/host_website.html">Hosting Your Course Website</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_host/troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../3_create/intro.html">Creating Engaging Content</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_create/markdown.html">Formatting Content With Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_create/media.html">Integrating Media Into Your Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_create/interactive2.html">Making Your Book Truly Interactive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_create/citations.html">Adding Citations and Bibliographies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_create/setup-files.html">Organizing Content With the Table of Contents</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/info.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/CoC.html">Code of Conduct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/dei.html">Diversity, Equity, and Inclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/open_science.html">Open Science</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/demo.html">Course Examples</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/DiLER-Digitell/tutorial_jupyter_books" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/DiLER-Digitell/tutorial_jupyter_books/edit/main/docs/content/4_additional/quick_tutorial_ws.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/DiLER-Digitell/tutorial_jupyter_books/issues/new?title=Issue%20on%20page%20%2Fcontent/4_additional/quick_tutorial_ws.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/4_additional/quick_tutorial_ws.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Quick Setup Guide</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-your-github-account">1. <span class="xref myst">Set up your GitHub account</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-our-course-template">2. <span class="xref myst">Copy our course template</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-familiar-with-the-course-template">3. <span class="xref myst">Getting familiar with the course template</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#host-your-course-website">4. <span class="xref myst">Host your course website</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-and-create-files">5. Edit and create files</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-your-first-file-the-config-file">5.1 Edit your first file: the config file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-readme-file">5.2 The README file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-file"><span class="xref myst">5.3 Create a new file</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-table-of-contents">6. <span class="xref myst">Update Table of Contents</span></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="quick-setup-guide">
+<h1>Quick Setup Guide<a class="headerlink" href="#quick-setup-guide" title="Permalink to this heading">#</a></h1>
+<p>Okay, now let’s get started! With your own course concept in mind, you will learn now how to create and host your Jupyter Book course website.</p>
+<p>If you have any questions, feel free to click on the section titels to dive into the detailed tutorials or get in touch with me!</p>
+<section id="set-up-your-github-account">
+<h2>1. <a class="reference internal" href="../1_github/account.html"><span class="doc std std-doc">Set up your GitHub account</span></a><a class="headerlink" href="#set-up-your-github-account" title="Permalink to this heading">#</a></h2>
+<p>If you haven’t already set up your GitHub account, please go to the <a class="reference internal" href="../1_github/account.html"><span class="doc std std-doc">respective section</span></a>.</p>
+</section>
+<section id="copy-our-course-template">
+<h2>2. <a class="reference internal" href="../1_github/project.html"><span class="doc std std-doc">Copy our course template</span></a><a class="headerlink" href="#copy-our-course-template" title="Permalink to this heading">#</a></h2>
+<p>Let’s copy our ready-to-go course template! It’s the quickest way to get started — simply customize and add your own pages to fit your content, without worrying about setting up a project from scratch.</p>
+<p>1. Go to the GitHub page of our <a class="reference external" href="https://github.com/luciebinder/course-template-minimal">course template</a> and click on “fork”.</p>
+<p><img alt="depicting position a look of the fork button on a GitHub repository" src="../../_images/fork-button.png" /></p>
+<p>2. Give your course a name and a description, check the box “Copy the main branch only,” and click the “Create fork” button.</p>
+<p><img alt="depicting position a look of the fork button on a GitHub repository" src="../../_images/create-fork.png" /></p>
+</section>
+<section id="getting-familiar-with-the-course-template">
+<h2>3. <a class="reference internal" href="../1_github/template.html"><span class="doc std std-doc">Getting familiar with the course template</span></a><a class="headerlink" href="#getting-familiar-with-the-course-template" title="Permalink to this heading">#</a></h2>
+<p>Let’s take a look at the structure of the course template:</p>
+<p><img alt="depicting the contents of the course template repository on GitHub" src="../../_images/folder-structure_minimal-template.png" /></p>
+<p>Some files can be ignored, as they contain technical information for hosting the website. The majority of what you’ll be modifying is located in the “lecture” content folder, which looks like this:</p>
+<p><img alt="depicting the contents of the course template repository on GitHub" src="../../_images/lecture-folder-structure.png" /></p>
+<p>In this folder, you can add your content by editing or creating Markdown files. But before we look at how to edit them, let’s set up your website first. By adjusting a few settings, GitHub Pages can host your website and automatically update it whenever you make changes.</p>
+</section>
+<section id="host-your-course-website">
+<h2>4. <a class="reference internal" href="../2_host/host_website.html"><span class="doc std std-doc">Host your course website</span></a><a class="headerlink" href="#host-your-course-website" title="Permalink to this heading">#</a></h2>
+<p>1. At the top of your repository, click on “Actions”. Then, click on the green button that says “I understand my workflows, go ahead and enable them” to enable workflows.</p>
+<p><img alt="Image of the tab where the word &quot;Action&quot; is located as well as the green button that enables workflows in the middle of the page." src="../../_images/enable-workflows.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>What is a workflow?</strong>
+A workflow in GitHub is an automated process that runs a series of steps in response to specific events in your repository, like pushing a file, editing content, or publishing your site. In our case, it’s what builds your Jupyter Book (“deploy-book”) and publishes it as a website using GitHub Pages (“pages build and deployment”).</p>
+</div>
+<p>2. Now, click on “deploy-book” on the left side.</p>
+<p><img alt="Image of the tab where deploy-book is located." src="../../_images/deploy-book.png" /></p>
+<p>3. Click on the button “Run workflow” located on the right-hand side and then again on “Run workflow” (green button).</p>
+<p><img alt="Image of the tab run workflow buttons." src="../../_images/run-workflow.png" /></p>
+<p>4. Now, the workflow is running. Once the green checkmark appears, the process has completed successfully.</p>
+<p><img alt="Image of the green checkmark." src="../../_images/book-deployed.png" /></p>
+<p>5. Click on “Settings” on the top of your repository.</p>
+<p><img alt="Image of the tab where the word &quot;Settings&quot; is located on the far right" src="../../_images/settings.png" /></p>
+<p>6. On the left side, click on “Pages”.</p>
+<p><img alt="Image of the menu on the left side." src="../../_images/pages.png" /></p>
+<p>7. Under Source, make sure that “Deploy from a branch” is selected.</p>
+<p><img alt="Image of the deploy from branch setting." src="../../_images/deploy-from-branch.png" /></p>
+<p>8. Under Branch: Select branch “gh-pages”. The folder “/root” is automatically selected.</p>
+<p><img alt="Image of the settings under Branch." src="../../_images/gh-pages-new.png" /></p>
+<p>This should look like this now. Don’t forget to click on save.</p>
+<p><img alt="Image of the settings under Branch." src="../../_images/save-gh-pages.png" /></p>
+<p>9. On the left side, click on “Action” and then “General”.</p>
+<p><img alt="Image of the menu on the left side." src="../../_images/actions-general.png" /></p>
+<p>10. At the bottom of the page, under “Workflow permissions,” select the option “Read and write permissions” and allow Github Actions to create and approve pull requests. Then, click on save.</p>
+<p><img alt="Image of the workflow permissions." src="../../_images/workflow_permissions.png" /></p>
+<p>11. Click on “Actions” again at the top of your repository. You should see a workflow named “pages build and deployment” with a green checkmark. If you see a yellow circle instead, the process is still running; just wait a moment or refresh the page until the checkmark turns green.</p>
+<p><img alt="Image of the workflow &quot;pages build and deployment&quot; with a green checkmark." src="../../_images/pages-build.png" /></p>
+<p>Once the process is finished, GitHub has successfully built your website. Let’s check it out!</p>
+<p>12. Go back to “Settings”, and then “Pages”. On the top of this page, you should now see a link that looks like this:</p>
+<p><img alt="Image of the final link that is presented under &quot;GitHub Pages&quot;." src="../../_images/pages_link_new.png" /></p>
+<p>This is the link to your newly built website! <strong>Congratulations</strong>!</p>
+<p>When you open it, you should see the welcome page to your website. On the left side, you can find the table of content. Now it’s your turn to fill the pages!</p>
+<p><img alt="Image of the built website." src="../../_images/new-website.png" /></p>
+</section>
+<section id="edit-and-create-files">
+<h2>5. <a class="reference external" href="https://luciebinder.github.io/ws-openness-2025/content/1_github/template.html#make-your-first-adjustments">Edit and create files</a><a class="headerlink" href="#edit-and-create-files" title="Permalink to this heading">#</a></h2>
+<section id="edit-your-first-file-the-config-file">
+<h3>5.1 Edit your first file: the config file<a class="headerlink" href="#edit-your-first-file-the-config-file" title="Permalink to this heading">#</a></h3>
+<p>Let’s edit your first file, the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file! Here, you’ll update the course title, authors’ names, affiliations, and other key details to make the template your own.</p>
+<p>1. First, click on “Code” to get to your file structure.
+<img alt="Image of the file structure." src="../../_images/code2.png" /></p>
+<p>2. To edit a file, click on the specific file (here: <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, which is located in the lecture folder).</p>
+<p><img alt="Image of the file structure." src="../../_images/click_on_file.png" /></p>
+<p>2. Click the edit button, represented by a small pencil in the upper right corner.</p>
+<p><img alt="Image of the edit button on the upper right corner." src="../../_images/edit_file.png" /></p>
+<p>3. Replace the existing information with your course title, your name, affiliation, and any other relevant details. Once you’re finished, click “Commit changes…”.</p>
+<p><img alt="Image of the commit changes button." src="../../_images/commit_changes.png" /></p>
+<p>4. For transparency and version control, provide a brief message describing the changes you made.</p>
+<p><img alt="Image of the pop-up window in which one can write the commit message" src="../../_images/commit_message.png" /></p>
+<p>As soon as you click on “Commit changes”, your changes will be saved.</p>
+<p><strong>Awesome! You’ve just added your first personal touch!</strong></p>
+</section>
+<section id="the-readme-file">
+<h3>5.2 The README file<a class="headerlink" href="#the-readme-file" title="Permalink to this heading">#</a></h3>
+<p>Now let’s add some text to another important file, the <code class="docutils literal notranslate"><span class="pre">README</span></code> file, a file that entails some main information on your course.</p>
+<p>1. Click on “Code” to get to your file structure. Then, click on the <code class="docutils literal notranslate"><span class="pre">README</span></code> file.</p>
+<p><img alt="Image of the upper options, selecting Code." src="../../_images/code.png" /></p>
+<p>2. Click on the “edit” symbol:</p>
+<p><img alt="Image of the edit button." src="../../_images/edit-readme.png" /></p>
+<p>3. Enter some text and click “Commit changes” when you’re done.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You might want to include the link to your website to your <code class="docutils literal notranslate"><span class="pre">README</span></code> file to make it easily accessible.</p>
+</div>
+<p><img alt="Image of the README file that is edited." src="../../_images/edit-readme2.png" /></p>
+<p>4. Add some descriptions about your changes and comiit the changes:</p>
+<p><img alt="Image of the commit process." src="../../_images/commit-readme.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Remember to update your README as soon as you filled your website with content.</p>
+</div>
+</section>
+<section id="create-a-new-file">
+<h3><a class="reference internal" href="../3_create/intro.html"><span class="doc std std-doc">5.3 Create a new file</span></a><a class="headerlink" href="#create-a-new-file" title="Permalink to this heading">#</a></h3>
+<p>1. Again, click on “Code” and navigate to the folder where you’d like to add the new file (here: <code class="docutils literal notranslate"><span class="pre">lecture/content</span></code>). Then, click on “Add file” in the upper-right corner and select “Create new file.”</p>
+<p><img alt="Image of the &quot;add file&quot; button and the &quot;create new file&quot; option." src="../../_images/new_file2.png" /></p>
+<p>2. Give your file a name (here: “writing”) and specify the file type, such as “.md” to create a Markdown file.</p>
+<p><img alt="Image of the field where the file name is entered, with &quot;writing.md&quot; written in it." src="../../_images/include_type2.png" /></p>
+<p>Now you’re ready to add your content and format it using Markdown! For details on how to format content with markdown, go to <a class="reference internal" href="../3_create/markdown.html"><span class="doc">Formatting Content With Markdown</span></a>.</p>
+</section>
+</section>
+<section id="update-table-of-contents">
+<h2>6. <a class="reference internal" href="../3_create/setup-files.html"><span class="doc std std-doc">Update Table of Contents</span></a><a class="headerlink" href="#update-table-of-contents" title="Permalink to this heading">#</a></h2>
+<p>Once you’ve created new files, you’ll need to add them to your table of contents so they appear on your website.</p>
+<p>1. Open the file <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> and click on the edit button on the right-hand side.</p>
+<p><img alt="Image of the toc file." src="../../_images/open-toc.png" /></p>
+<p>The list of file names (including their paths) in this file defines the structure and content of your website’s navigation:</p>
+<p><img alt="Image of the built website." src="../../_images/new-website.png" /></p>
+<p>2. Add the path to your newly created file within the structure of the table of contents. All paths must be specified relative to the _toc.yml file, which is located in the lecture folder.</p>
+<p>In the example below, the file is added as a subsection (listed under “sections”) of the chapter “intro-content”:</p>
+<p><img alt="Image of the edited toc file." src="../../_images/edit-toc.png" /></p>
+<p>For a detailed explanation of how to structure your table of contents file, see: <a class="reference internal" href="../3_create/setup-files.html"><span class="doc">Organizing Content With the Table of Contents</span></a>.</p>
+<p><strong>Congratulations</strong>!</p>
+<p>You’ve created your first course website and added a new file to your table of contents! Now, you can focus on designing a beautiful and engaging site to enrich your teaching and your students’ learning experience.</p>
+<p>To explore what’s possible and learn how to further enhance your content, for example, through formatting or by including multimedia, check out the detailed guide here: <a class="reference internal" href="../3_create/markdown.html"><span class="doc">Formatting Content With Markdown</span></a></p>
+<hr class="docutils" />
+<p>For those of you interested in integrating live R code, check out the following resources:</p>
+<ul class="simple">
+<li><p>Our tutorial on how to integrate MyBinder: <a class="reference internal" href="../3_create/interactive2.html"><span class="doc">Making Your Book Truly Interactive</span></a></p></li>
+<li><p>Integrating the RStudie user interface via MyBinder: <a class="reference external" href="https://mybinder.readthedocs.io/en/latest/howto/user_interface.html#rstudio">https://mybinder.readthedocs.io/en/latest/howto/user_interface.html#rstudio</a></p></li>
+<li><p>Choose R as the default language in MyBinder: <a class="reference external" href="https://mybinder.readthedocs.io/en/latest/howto/languages.html#the-r-language">https://mybinder.readthedocs.io/en/latest/howto/languages.html#the-r-language</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "DiLER-Digitell/tutorial_jupyter_books",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/4_additional"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../general-information/assignment.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Now It’s Your Turn!</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../general-information/wrap-up.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Wrap-Up and Feedback</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-your-github-account">1. <span class="xref myst">Set up your GitHub account</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-our-course-template">2. <span class="xref myst">Copy our course template</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-familiar-with-the-course-template">3. <span class="xref myst">Getting familiar with the course template</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#host-your-course-website">4. <span class="xref myst">Host your course website</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-and-create-files">5. Edit and create files</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-your-first-file-the-config-file">5.1 Edit your first file: the config file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-readme-file">5.2 The README file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-file"><span class="xref myst">5.3 Create a new file</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-table-of-contents">6. <span class="xref myst">Update Table of Contents</span></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Lucie Binder, Jannika Hollmann, Michael Ernst, Nariman Utegaliyev based on the Gorella template by Peer Herholz, José C. García Alanis, Christoph Vogelbacher
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, BSD-3-Clause license.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
