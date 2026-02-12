@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Quick Setup Guide &#8212; Group session: Working collaborative with Jupyter Book</title>
+    <title>Course Setup Guide &#8212; Group session: Working collaborative with Jupyter Book</title>
   
   
   
@@ -418,7 +418,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Quick Setup Guide</h1>
+    <h1>Course Setup Guide</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -445,14 +445,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="quick-setup-guide">
-<h1>Quick Setup Guide<a class="headerlink" href="#quick-setup-guide" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="course-setup-guide">
+<h1>Course Setup Guide<a class="headerlink" href="#course-setup-guide" title="Permalink to this heading">#</a></h1>
 <p>Got some experience setting up a Jupyter Book, or just want the quickest way to get your own course website up and running? This page is for you. While we can’t cover everything in just 10 steps, we’ve condensed the process of creating and hosting your Jupyter Book course website. <strong>Click on the section titles to dive into the detailed tutorials</strong>.</p>
 <section id="set-up-your-github-account">
 <h2>1. <a class="reference internal" href="../1_github/account.html"><span class="doc std std-doc">Set up your GitHub account</span></a><a class="headerlink" href="#set-up-your-github-account" title="Permalink to this heading">#</a></h2>
 <p>First things first: If you don’t have a GitHub account yet, head over to github.com and sign up.</p>
 <p><img alt="Image of the GitHub website's upper header with an arrow pointing to the &quot;Sign up&quot; button." src="../../_images/github_sign-up.png" /></p>
 <p>Choose your username carefully, as your username will be included in the link to the website we’re going to build and will be publicly displayed!</p>
+<p>Now there are two ways to continue. We can either “fork” our existing template repo, meaning you create a copy of the repositories contens under your own account, or, which seems more intuitive, click the “use this template” button. Both versions do mostly the same, but an account can only have 1 fork of an existing repository. For subsequent courses, you therefore would have to create copies of your courses or delete the already existing version. The “template” button, unfortunately, leads to some unexpected behaviors as well, but allows the creation of multiple course repositories under the same account. We will start out by explaining how to fork our template and discuss how to use templates at the end of this chapter.</p>
 </section>
 <section id="copy-our-course-template">
 <h2>2. <a class="reference internal" href="../1_github/project.html"><span class="doc std std-doc">Copy our course template</span></a><a class="headerlink" href="#copy-our-course-template" title="Permalink to this heading">#</a></h2>
@@ -515,6 +516,21 @@ document.write(`
 </ol>
 <p><img alt="Image of the final link that is presented under &quot;GitHub Pages&quot;." src="../../_images/pages_link.png" /></p>
 <p>Click on the link to view your freshly built content website!</p>
+<ol class="arabic simple" start="11">
+<li><p>“use this template” functionality</p></li>
+</ol>
+<p>As briefly mentioned before, we can only maintain a single fork of an existing repo. Should you want to create more courses we have to use the template functionality of GitHub.
+This essentially does the same as the fork with a few differences.</p>
+<p>Img 1 -&gt; select use this template
+Img 2 -&gt; template creation settings</p>
+<p>So far, so good. But if you head over to the actions section, you will see that although you have not enabled said workflows, that a process is already running and given some time will produce the following error.</p>
+<p>img 3 -&gt; actions failure</p>
+<p>This is due to the way templates are handled internally by GitHub. If we jump over to the settings tab and select “actions” -&gt; “general” you will find that the template was crated with limited permissions, making it impossible for the gh-pages workflow to write to the repository.</p>
+<p>img 4 -&gt; permissions</p>
+<p>If we now correct the permissions and rerun our workflow, the error will disappear, and the website ultimately build.</p>
+<p>img 5 - corrected perms
+img 6 - success workflow
+img 7 - built template website</p>
 <p>Once you’re ready, make sure to make your repository public so that others can view your beautiful website.</p>
 </section>
 </section>
