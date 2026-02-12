@@ -1,4 +1,4 @@
-# Quick Setup Guide 
+# Course Setup Guide 
 
 Got some experience setting up a Jupyter Book, or just want the quickest way to get your own course website up and running? This page is for you. While we can't cover everything in just 10 steps, we've condensed the process of creating and hosting your Jupyter Book course website. **Click on the section titles to dive into the detailed tutorials**.
 
@@ -8,6 +8,9 @@ First things first: If you don't have a GitHub account yet, head over to github.
 ![Image of the GitHub website's upper header with an arrow pointing to the "Sign up" button.](../../static/github_sign-up.png)
 
 Choose your username carefully, as your username will be included in the link to the website we’re going to build and will be publicly displayed! 
+
+
+Now there are two ways to continue. We can either "fork" our existing template repo, meaning you create a copy of the repositories contens under your own account, or, which seems more intuitive, click the "use this template" button. Both versions do mostly the same, but an account can only have 1 fork of an existing repository. For subsequent courses, you therefore would have to create copies of your courses or delete the already existing version. The "template" button, unfortunately, leads to some unexpected behaviors as well, but allows the creation of multiple course repositories under the same account. We will start out by explaining how to fork our template and discuss how to use templates at the end of this chapter.
 
 ## 2. [Copy our course template](../1_github/project)
 
@@ -73,6 +76,30 @@ This should look like this now. Don't forget to click on save.
 ![Image of the final link that is presented under "GitHub Pages".](../../static/pages_link.png)
 
 Click on the link to view your freshly built content website! 
+
+
+11. "use this template" functionality
+
+As briefly mentioned before, we can only maintain a single fork of an existing repo. Should you want to create more courses we have to use the template functionality of GitHub. 
+This essentially does the same as the fork with a few differences. 
+
+Img 1 -> select use this template
+Img 2 -> template creation settings
+
+So far, so good. But if you head over to the actions section, you will see that although you have not enabled said workflows, that a process is already running and given some time will produce the following error. 
+
+img 3 -> actions failure
+
+This is due to the way templates are handled internally by GitHub. If we jump over to the settings tab and select "actions" -> "general" you will find that the template was crated with limited permissions, making it impossible for the gh-pages workflow to write to the repository. 
+
+img 4 -> permissions
+
+If we now correct the permissions and rerun our workflow, the error will disappear, and the website ultimately build.
+
+img 5 - corrected perms
+img 6 - success workflow
+img 7 - built template website
+
 
 
 Once you're ready, make sure to make your repository public so that others can view your beautiful website.
