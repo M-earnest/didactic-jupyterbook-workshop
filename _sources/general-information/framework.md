@@ -6,16 +6,19 @@
 Has anyone worked with GitHub, Markdown, or built a website before?
 ````
 
-Now that you have learned about the advantages of using OER and especially our approach for teaching, let’s take a look at the framework that will help make your teaching more flexible, open, and engaging. Later, you will learn step by step how to create your own course website. But first, here’s a simple overview of the main tools you will work with:
+Now that you have learned about the advantages of using OER and our perspective on education, let’s take a look at the framework that will help make your teaching more flexible, open, and engaging. Later, you will learn step by step how to create your own course website. But first, here’s a simple overview of the main tools you will work with:
+
+We propose the adoption of **Open Educational Resources (OER)**, effectively created, maintained, and shared via a combination of open-source tools, including [Jupyter Books](https://jupyterbook.org/en/stable/intro.html) and [GitHub](https://github.com/), along with [GitHub Pages](https://pages.github.com/).
 
 ## The course template
 
-We provide a ready-to-use course template that makes it easy for you to create your own course website. You don’t need to start from scratch! You can simply add your own content and customize the pages to fit your teaching.
+
+We provide a ready-to-use [course template](https://github.com/DiLER-Digitell/course-template-minimal) that makes it easy for you to create your own course website. You don’t need to start from scratch! Simply add your own content and customize the pages to fit your teaching.
 
 The template includes:
 - a folder structure to help you stay organized,
 - example pages you can edit or replace,
-- a table of content file,
+- a table of content (toc) file,
 - a license for your materials,
 - an open science statement,
 - a statement on equity, diversity, and inclusion,
@@ -35,7 +38,7 @@ In the `lecture` folder, you will save all the files related to your course cont
 The `README` contains a short explanation of your website or course. All other files are setup files and can mostly be ignored while working on your content.
 
 ## Jupyter Book
-GitHub is where your files are stored. Jupyter Book is the tool that turns those files into a nice-looking website. You can control how your website looks and works using two main files:
+GitHub is where your files are stored. Jupyter Book is the tool that turns those files into a nice-looking website. Using the two provided `.yml` files you can adapte the structure and look of your website.
 
 - `_config.yml`: This file stores the main settings for your website.
 - `_toc.yml`: This file defines your table of contents (the structure of your website).
@@ -44,11 +47,11 @@ Both files are stored in the `lecture` folder:
 
 ![Image of the lecture folder structure of the repository of the course template](../static/lecture-folder-structure.png)
 
-In a moment, we will take a closer look at the possibilities Jupyter Book offers.
+Don't worry if you don't understand what this means, in a moment we will take a closer look at these concepts and work through them step-by-step.
 
 ## GitHub Pages
-GitHub Pages lets you host your website directly from your GitHub repository, making it easy to publish course content, documentation, or personal projects.
+GitHub Pages is a background program that lets you host your website directly from your GitHub repository, making it easy to publish course content, documentation, or personal projects.
 
-In the course template, there is a special file called `book.yml` (inside the folder `.github/workflows`). This file tells GitHub how to build and update your website automatically. Later, you will only need to change a few settings in GitHub to make your site visible to others.
+In the course template, there is a special pre-defined file called `book.yml` (inside the folder `.github/workflows`). This file tells GitHub how to build and update your website automatically. Later, you will only need to change a few settings in GitHub to make your site visible to others.
 
 Next, I will present to you some key reasons why we use Jupyter Book within our framework.

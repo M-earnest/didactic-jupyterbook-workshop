@@ -455,15 +455,16 @@ document.write(`
 <p class="sd-card-text">Has anyone worked with GitHub, Markdown, or built a website before?</p>
 </div>
 </div>
-<p>Now that you have learned about the advantages of using OER and especially our approach for teaching, let’s take a look at the framework that will help make your teaching more flexible, open, and engaging. Later, you will learn step by step how to create your own course website. But first, here’s a simple overview of the main tools you will work with:</p>
+<p>Now that you have learned about the advantages of using OER and our perspective on education, let’s take a look at the framework that will help make your teaching more flexible, open, and engaging. Later, you will learn step by step how to create your own course website. But first, here’s a simple overview of the main tools you will work with:</p>
+<p>We propose the adoption of <strong>Open Educational Resources (OER)</strong>, effectively created, maintained, and shared via a combination of open-source tools, including <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Books</a> and <a class="reference external" href="https://github.com/">GitHub</a>, along with <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>.</p>
 <section id="the-course-template">
 <h2>The course template<a class="headerlink" href="#the-course-template" title="Permalink to this heading">#</a></h2>
-<p>We provide a ready-to-use course template that makes it easy for you to create your own course website. You don’t need to start from scratch! You can simply add your own content and customize the pages to fit your teaching.</p>
+<p>We provide a ready-to-use <a class="reference external" href="https://github.com/DiLER-Digitell/course-template-minimal">course template</a> that makes it easy for you to create your own course website. You don’t need to start from scratch! Simply add your own content and customize the pages to fit your teaching.</p>
 <p>The template includes:</p>
 <ul class="simple">
 <li><p>a folder structure to help you stay organized,</p></li>
 <li><p>example pages you can edit or replace,</p></li>
-<li><p>a table of content file,</p></li>
+<li><p>a table of content (toc) file,</p></li>
 <li><p>a license for your materials,</p></li>
 <li><p>an open science statement,</p></li>
 <li><p>a statement on equity, diversity, and inclusion,</p></li>
@@ -481,19 +482,19 @@ document.write(`
 </section>
 <section id="jupyter-book">
 <h2>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this heading">#</a></h2>
-<p>GitHub is where your files are stored. Jupyter Book is the tool that turns those files into a nice-looking website. You can control how your website looks and works using two main files:</p>
+<p>GitHub is where your files are stored. Jupyter Book is the tool that turns those files into a nice-looking website. Using the two provided <code class="docutils literal notranslate"><span class="pre">.yml</span></code> files you can adapte the structure and look of your website.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>: This file stores the main settings for your website.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>: This file defines your table of contents (the structure of your website).</p></li>
 </ul>
 <p>Both files are stored in the <code class="docutils literal notranslate"><span class="pre">lecture</span></code> folder:</p>
 <p><img alt="Image of the lecture folder structure of the repository of the course template" src="../_images/lecture-folder-structure.png" /></p>
-<p>In a moment, we will take a closer look at the possibilities Jupyter Book offers.</p>
+<p>Don’t worry if you don’t understand what this means, in a moment we will take a closer look at these concepts and work through them step-by-step.</p>
 </section>
 <section id="github-pages">
 <h2>GitHub Pages<a class="headerlink" href="#github-pages" title="Permalink to this heading">#</a></h2>
-<p>GitHub Pages lets you host your website directly from your GitHub repository, making it easy to publish course content, documentation, or personal projects.</p>
-<p>In the course template, there is a special file called <code class="docutils literal notranslate"><span class="pre">book.yml</span></code> (inside the folder <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code>). This file tells GitHub how to build and update your website automatically. Later, you will only need to change a few settings in GitHub to make your site visible to others.</p>
+<p>GitHub Pages is a background program that lets you host your website directly from your GitHub repository, making it easy to publish course content, documentation, or personal projects.</p>
+<p>In the course template, there is a special pre-defined file called <code class="docutils literal notranslate"><span class="pre">book.yml</span></code> (inside the folder <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code>). This file tells GitHub how to build and update your website automatically. Later, you will only need to change a few settings in GitHub to make your site visible to others.</p>
 <p>Next, I will present to you some key reasons why we use Jupyter Book within our framework.</p>
 </section>
 </section>
