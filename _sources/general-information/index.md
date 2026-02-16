@@ -1,24 +1,27 @@
 ![Logo of the DiLER project](../static/logo.png)
 # **Welcome!**
 
-Hello and welcome everyone to our course on "Open Eductaional Resources for Higher Eductaion" hosted by  [Grade](https://www.grade.uni-frankfurt.de/51934152/GRADE___Die__Post__Graduiertenakademie_der_Goethe_Universit%C3%A4t) at the Goethe University Frankfurt.
+Welcome everyone to our course on "Open Eductaional Resources for Higher Eductaion" hosted by  [Grade](https://www.grade.uni-frankfurt.de/51934152/GRADE___Die__Post__Graduiertenakademie_der_Goethe_Universit%C3%A4t) at the Goethe University Frankfurt. If you wonder what Open Educational Resources are, we will spend some time on that question later, but you're already looking at one of them. In short, this course will teach you how to create a resource like the one you're looking at right now.
+
+These matrieals are part of the [DiLER](https://diler-digitell.github.io/intro.html) project (a partnership of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) at Goethe University Frankfurt) that aims to provide open and free content to promote key digital skills for working in academia/empirical sciences. We aim to encourage and support other course instructors to take advantage of our open-source tools to enhance and credit their coursework.
 
 The workshop will take place from 10.15 to 14.00 on the 18th February, 2026 in room number 03.C107 (3d floor, building part C) at the Sprach- und Kulturwissenschaften (SKW) Building of the Campus Westend. 
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.32300470476!2d8.665866576883444!3d50.13051687153289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd09d9012f42f5%3A0x8619950779cd34c5!2sSprach-%20und%20Kulturwissenschaften%20(SKW)!5e1!3m2!1sen!2sde!4v1771248033443!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<br>
-
-This workshop is part of the [DiLER](https://diler-digitell.github.io/intro.html) project (a partnership of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) at Goethe University Frankfurt) that aims to provide open and free educational resources to promote key digital skills for working in academia/empirical sciences. We aim to empower course instructors to take advantage of interactive, flexible, and open-source tools to enhance their coursework.
 
 <br>
 
 ## Objectives of this workshop
 
+The objectives are straightforward. Spend a few minutes thinking about the following bullet points. What do you already know about the topics? What do you think you'll learn?
+
 - Recognize how openness can enhance teaching, learning, and research.
 - Think beyond what you teach — focus on how and why to support effective learning.
 - Learn how the tools [Jupyter Book](https://jupyterbook.org/en/stable/intro.html) and [GitHub Pages](https://pages.github.com/) can be combined to create accessible, interactive, and citable learning materials.
 - Take the first concrete steps toward an open, digital course website.
+
+We will come back to visit these objectives at the end of the course and see whether your (and our) expectations were met.
 
 
 
@@ -37,7 +40,9 @@ Our final session, [Chapter 3. Wrap-Up](https://m-earnest.github.io/didactic-jup
 You will also find some additional information under the section resources. on how to create your course website, which provides more detail than the quick setup guide, along with additional resources for you to explore.
 
 
-## How did we get here?
+## How/why did we get here?
+
+
 We, the DiLER team, believe that education should be open to as many people as possible, which is why this website is created as an open and free resource; if you’d like to create a course following our framework, please consider doing the same. Especially important should be the inclusion (and possibly adaptation) of our [diversity, equity, and inclusion statement](../resources/dei), our [open science statement](../resources/open_science), and the [Code of Conduct](../resources/CoC) to promote [FAIR](https://www.nature.com/articles/sdata201618) (Wilkinson et al., 2016) and inclusive access to education.
    
 ## Where is everything?
