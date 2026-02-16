@@ -62,6 +62,8 @@ However, please let me know if you have a preferred way of interacting with othe
 
 ## Questions so far?
 
+You can direct any questions to me via the email above or join our [DiLER Discord Server](https://discord.gg/cuDqc9gn) and reach out to one of the moderators.
+
 ----
 ## Acknowledgments
 This workshop was initially created by Dr. [Lucie Binder](https://github.com/luciebinder) and is based on the online course [Creating interactive content with Jupyter Books](https://diler-digitell.github.io/tutorial_jupyter_books/general-information/index.html) developed as part of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) by the [DiLER](https://diler-digitell.github.io/intro.html) project. It was subsequently adapted and expanded to fit the Grade workshop format.
