@@ -1,7 +1,7 @@
 ![Logo of the DiLER project](../static/logo.png)
 # **Welcome!**
 
-Welcome everyone to our course on "Open Eductaional Resources for Higher Eductaion" hosted by  [Grade](https://www.grade.uni-frankfurt.de/51934152/GRADE___Die__Post__Graduiertenakademie_der_Goethe_Universit%C3%A4t) at the Goethe University Frankfurt. If you wonder what Open Educational Resources are, we will spend some time on that question later, but you're already looking at one of them. In short, this course will teach you how to create a resource like the one you're looking at right now.
+Welcome everyone to our course on "Creating Open Eductaional Resources for Higher Eductaion using Jupyter Books" hosted by  [Grade](https://www.grade.uni-frankfurt.de/51934152/GRADE___Die__Post__Graduiertenakademie_der_Goethe_Universit%C3%A4t) at the Goethe University Frankfurt. If you wonder what Open Educational Resources are, we will spend some time on that question later, but you're already looking at one of them. In short, this course will teach you how to create a resource like the one you're looking at right now.
 
 These matrieals are part of the [DiLER](https://diler-digitell.github.io/intro.html) project (a partnership of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) at Goethe University Frankfurt) that aims to provide open and free content to promote key digital skills for working in academia/empirical sciences. We aim to encourage and support other course instructors to take advantage of our open-source tools to enhance and credit their coursework.
 
