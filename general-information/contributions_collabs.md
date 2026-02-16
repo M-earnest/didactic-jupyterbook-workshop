@@ -55,11 +55,11 @@ In the commit view add an informative title and describe the changes you have ma
 
 img commit_file
 
-To make the newly created content appear on the website, we have to add the new file to our `toc.yml`. Jump back into the (link) tutorial to see how to do this.
+To make the newly created content appear on the website, we have to add the new file to our `toc.yml`. Jump back into the [Creating OER tutorial](https://diler-digitell.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html) to recall how to do this.
 
-Once, you have commited the changes to the `toc.yml`, you can check the actions workflows and following the course website to view you rendered contibutions.
+Once you have committed the changes to the `toc.yml`, you can check the actions workflows and following, the course website to view your rendered contributions.
 
-So congratulations, you now know how to leverage the central hub of the global software development economy to manage your own projects! You can now effectiely declare that you are using the "gold standard" frameworks of the tech industry for collaborative coding and software project management.
+So congratulations, you now know how to leverage the central hub of the global software development economy to manage your own projects! You can now effectively declare that you are using the "gold standard" frameworks of the tech industry for collaborative coding and software project management.
 
 
 1.4 A Safety Net: Working with Branches
@@ -75,7 +75,7 @@ When you want to try a new idea, the standard should be to create a new "branch"
 
 Here is how to do it in the browser:
 
-    Create/Select a Branch: On the main page of the repository, look for the dropdown button on the left that says main. Click it and type a new name for your workspace (e.g., drafting-chapter-1). Click Create branch....
+    Create/Select a Branch: On the main page of the repository, look for the dropdown button on the left that says main. Click it and type a new name for your workspace (e.g., draft-chapter-1). Click Create branch....
 
     img create_branch
 
@@ -87,23 +87,23 @@ Here is how to do it in the browser:
 
         Click New Pull Request.
 
-        Select your branch (drafting-chapter-1) to compare it against main.
+        Select your branch (draft-chapter-1) to compare it against main.
 
         Click Create Pull Request.
 
     img open_pr
 
-This opens a discussion thread where your partner can review your notes, leave comments, and finally click the big green Merge button to officially add your work to the project. This review process is essentially the heart of collaborative coding and allows you to have full control over whata happens to your course.
+This opens a discussion thread where your partner can review your notes, leave comments, and finally click the Merge button to officially add your work to the project. This review process is essentially the heart of collaborative coding and allows you to have full control over what happens to your course.
 
 2. Outside collaborators and Independent contributions: Forking & Pull Requests
 
-What if you want to e.g., contribute to a massive open-source textbook where you don't know the owners personally? Or you want to invite help from someone outside your core team, e.g. maybe a student from another university or a subject matter expert without giving them full "Write" access to your repository. Giving every single contributor direct access is risky as they could accidentally delete files, push unfinished drafts t your main branch, or create merge conflicts.
+What if you want to, e.g., contribute to a massive open-source textbook where you don't know the owners personally? Or you want to invite help from someone outside your core team, e.g., a student from another university or a subject matter expert, without giving them full "Write" access to your repository. Giving every single contributor direct access is risky as they could accidentally delete files, push unfinished drafts to your main branch, or create merge conflicts.
 
 The safest way to contribute or accept contributions from people you don't fully trust or who you just want to help once) is by 'forking' the repository. We have already learned about this in the previous lesson, but for the sake of training, let's make some changes to a partner's repository and then ask them to review and accept those changes via a so-called "pull request".
 
 2.1 The Forking Workflow
 
-A "Fork" is simply a personal copy of your repository that lives under the contributor's account. They have full freedom to break, fix, or rewrite their copy without affecting your original pr'oject at all.
+A "Fork" is simply a personal copy of your repository that lives under the contributor's account. They have full freedom to break, fix, or rewrite their copy without affecting your original project at all.
 
 Navigate to your partner's repository. In the top right corner, they should look for the Fork button.
 
