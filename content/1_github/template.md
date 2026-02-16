@@ -16,20 +16,15 @@ Where:
 | **README** | A short explanation of your website/course.|
 | **LICENSE** | Self-explanatory, stating who and how people are allowed to use or reproduce the content of this repo.|
 | **requirements.txt** | Contains the necessary requirements for the automatic scripts building the website to run; there is no need to change anything here. |
-
-Now, most the things that you'll be adapting are contained in the content folder "lecture", which looks like this:
-
-![depicting the contents of the course template repository on GitHub](../../static/lecture-folder-structure.png)
-
-Where:
-| File/Folder | Description | 
-| :----- | :-----|
-| **content** | Contains files making up the main content of a course website.
-| **general information** | Contains files providing information, such as the necessary setup, the outline of the course, a code of conduct, etc. The included `index.md` file will be the landing point of the course website.|
-| **introduction** | Contains files making up the introductory sessions of a course.|
 | **static** | Contains all the pictures and graphs contained in a course. |
 | **config.yml** | Contains the course title, authors, and copyright notice at the footer of the website, which you should change before hosting your website. Further, it contains the specifics for the technical implementations of a course, e.g., whether Jupyter notebooks should be re-run every time the course website is created by the GitHub workflow or, e.g., whether a course incorporated interactive elements.|
 | **toc.yml** | Contains information on the structure of the course website. For an in-depth explanation, jump to the [respective section](../3_create/setup-files).|
+Now, most the things that you'll be adapting are contained in the content folder "lecture". This is where your actual content files will later be stored. 
+
+![depicting the contents of the course template repository on GitHub](../../static/lecture-folder-structure.png)
+
+
+Now there are also some files that define how our Website will be structured and what functionalities we want to incorporate. These are generally pre-built and need only a few adjustemnts. We will discuss how to work with these later. 
 
 <br>
 
