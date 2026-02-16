@@ -26,6 +26,7 @@ parts:
     - file: content/3_create/citations
     - file: content/3_create/setup-files
     - file: content/4_additional/test_quiz
+  - file: general-information/contributions_collabs.md
   - file: general-information/assignment  
 - caption: 3. Wrap-Up
   chapters:
