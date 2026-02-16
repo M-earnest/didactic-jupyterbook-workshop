@@ -519,16 +519,16 @@ Navigate to the “general information” folder of your partners repository. Cl
 So add some notes or a friendly message to your partner and click “commoit changes” in the upper right hand corner.</p>
 <p>In the commit view add an informative title and describe the changes you have made in as much detail as necessary.</p>
 <p>img commit_file</p>
-<p>To make the newly created content appear on the website, we have to add the new file to our <code class="docutils literal notranslate"><span class="pre">toc.yml</span></code>. Jump back into the (link) tutorial to see how to do this.</p>
-<p>Once, you have commited the changes to the <code class="docutils literal notranslate"><span class="pre">toc.yml</span></code>, you can check the actions workflows and following the course website to view you rendered contibutions.</p>
-<p>So congratulations, you now know how to leverage the central hub of the global software development economy to manage your own projects! You can now effectiely declare that you are using the “gold standard” frameworks of the tech industry for collaborative coding and software project management.</p>
+<p>To make the newly created content appear on the website, we have to add the new file to our <code class="docutils literal notranslate"><span class="pre">toc.yml</span></code>. Jump back into the <a class="reference external" href="https://diler-digitell.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html">Creating OER tutorial</a> to recall how to do this.</p>
+<p>Once you have committed the changes to the <code class="docutils literal notranslate"><span class="pre">toc.yml</span></code>, you can check the actions workflows and following, the course website to view your rendered contributions.</p>
+<p>So congratulations, you now know how to leverage the central hub of the global software development economy to manage your own projects! You can now effectively declare that you are using the “gold standard” frameworks of the tech industry for collaborative coding and software project management.</p>
 <p>1.4 A Safety Net: Working with Branches</p>
 <p>While editing files directly on the main page works, it comes with a risk. Imagine if you and your partner both try to rewrite the introduction chapter at the exact same time. Who wins? Usually, this will result in one of two things, either the last person to click “Commit” overwrites the other person’s work, or GitHub declares a “conflict”.</p>
 <p>To avoid this chaos, developers use <code class="docutils literal notranslate"><span class="pre">Branches</span></code>.</p>
 <p>Think of the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch (the one you are working on now, check screenshot) as the “published” version of your book. It should always be clean and error-free.</p>
 <p>When you want to try a new idea, the standard should be to create a new “branch”, which is like creating your own copy of the project to a separate room to scribble on it safely. If you mess up, you can just throw the copy away without hurting or in any way changing the original files. If you like it, you “merge” it back in.</p>
 <p>Here is how to do it in the browser:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Create/Select a Branch: On the main page of the repository, look for the dropdown button on the left that says main. Click it and type a new name for your workspace (e.g., drafting-chapter-1). Click Create branch....
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Create/Select a Branch: On the main page of the repository, look for the dropdown button on the left that says main. Click it and type a new name for your workspace (e.g., draft-chapter-1). Click Create branch....
 
 img create_branch
 
@@ -540,21 +540,21 @@ The Pull Request (Merging): Once you are happy with your edits, you need to tell
 
     Click New Pull Request.
 
-    Select your branch (drafting-chapter-1) to compare it against main.
+    Select your branch (draft-chapter-1) to compare it against main.
 
     Click Create Pull Request.
 
 img open_pr
 </pre></div>
 </div>
-<p>This opens a discussion thread where your partner can review your notes, leave comments, and finally click the big green Merge button to officially add your work to the project. This review process is essentially the heart of collaborative coding and allows you to have full control over whata happens to your course.</p>
+<p>This opens a discussion thread where your partner can review your notes, leave comments, and finally click the Merge button to officially add your work to the project. This review process is essentially the heart of collaborative coding and allows you to have full control over what happens to your course.</p>
 <ol class="arabic simple" start="2">
 <li><p>Outside collaborators and Independent contributions: Forking &amp; Pull Requests</p></li>
 </ol>
-<p>What if you want to e.g., contribute to a massive open-source textbook where you don’t know the owners personally? Or you want to invite help from someone outside your core team, e.g. maybe a student from another university or a subject matter expert without giving them full “Write” access to your repository. Giving every single contributor direct access is risky as they could accidentally delete files, push unfinished drafts t your main branch, or create merge conflicts.</p>
+<p>What if you want to, e.g., contribute to a massive open-source textbook where you don’t know the owners personally? Or you want to invite help from someone outside your core team, e.g., a student from another university or a subject matter expert, without giving them full “Write” access to your repository. Giving every single contributor direct access is risky as they could accidentally delete files, push unfinished drafts to your main branch, or create merge conflicts.</p>
 <p>The safest way to contribute or accept contributions from people you don’t fully trust or who you just want to help once) is by ‘forking’ the repository. We have already learned about this in the previous lesson, but for the sake of training, let’s make some changes to a partner’s repository and then ask them to review and accept those changes via a so-called “pull request”.</p>
 <p>2.1 The Forking Workflow</p>
-<p>A “Fork” is simply a personal copy of your repository that lives under the contributor’s account. They have full freedom to break, fix, or rewrite their copy without affecting your original pr’oject at all.</p>
+<p>A “Fork” is simply a personal copy of your repository that lives under the contributor’s account. They have full freedom to break, fix, or rewrite their copy without affecting your original project at all.</p>
 <p>Navigate to your partner’s repository. In the top right corner, they should look for the Fork button.</p>
 <p>img fork_button</p>
 <p>Once you click it, GitHub creates a clone of their repository under your username. You will see the title PartnerName/YourProjectName with a small label underneath: forked from PartnersName/PartnersProjectName.</p>
