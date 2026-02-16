@@ -1,9 +1,9 @@
 # Now It's Your Turn!
 
 ## First task: Develop your course concept
-Take the next 15 minutes to sketch a first concept for your own course. Focus especially on didactic aspects: not just _what_ you want to teach, but _how_ and _why_. The following guiding questions can help:
+Take the next 20 minutes to sketch a first concept for your own course. You can do so either on your own, or find a partner and follow our guide on [Working Collaboratively](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/contributions_collabs.html). Focus especially on didactic aspects: not just _what_ you want to teach, but _how_ and _why_. The following guiding questions can help:
 
-1. What should students know or be able to do at the end of my course?
+1. What should participants know or be able to do at the end of my course?
 2. How can I align my content and teaching methods with the skills, needs, and expectations of my target audience?
 3. How can I organize my content clearly and logically (e.g. modules, chapters)?
 4. Where can I include opportunities for reflection, review, or guided support?
