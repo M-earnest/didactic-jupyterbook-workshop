@@ -9,7 +9,7 @@ The workshop will take place on the 18th February, 2026 in room number 03.C107 (
 
 This workshop is part of the [DiLER](https://diler-digitell.github.io/intro.html) project (a partnership of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) at Goethe University Frankfurt) that aims to provide open and free educational resources to promote key digital skills for working in academia/empirical sciences. We aim to empower course instructors to take advantage of interactive, flexible, and open-source tools to enhance their coursework.
 
-## What are the objectives of this workshop
+## Objectives of this workshop
 
 **In this group session, you will**
 - Recognize how openness can enhance teaching, learning, and research.
@@ -19,15 +19,15 @@ This workshop is part of the [DiLER](https://diler-digitell.github.io/intro.html
 
 ## Course Structure
 
-Chapter [0. Preparation](https://m-earnest.github.io/didactic-jupyterbook-workshop/content/account.html) will lead you through the basic prerequisities to follow along. All you really need is a PC/Tablet, a GitHub account and a modern browser (chrome, firefox etc.).
+[Chapter 0. Preparation](https://m-earnest.github.io/didactic-jupyterbook-workshop/content/account.html) will lead you through the basic prerequisities to follow along. All you really need is a PC/Tablet, a GitHub account and a modern browser (chrome, firefox etc.).
 
-Chapert [1. Open Educational Resources](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/why_oer.html) will provide context, discuss the didactic opportunities/benefits of using open and accessible teaching materials and show you why we believe that our approach to OER is worthwile.
+[Chapert 1. Open Educational Resources](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/why_oer.html) will provide context, discuss the didactic opportunities/benefits of using open and accessible teaching materials and show you why we believe that our approach to OER is worthwile.
 
-Chapter [2. Creating your own OER](m-earnest.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html) will walk you through the process of creating, adapting and hosting your own course materials. You will also learn how to make your courses more interactive and how to use GitHub to collaborate with others.
+[Chapter 2. Creating your own OER](m-earnest.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html) will walk you through the process of creating, adapting and hosting your own course materials. You will also learn how to make your courses more interactive and how to use GitHub to collaborate with others.
 
 Following the guided group session, you will have time to actively flesh out [your own course concept](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/assignment.html) or to plan collaborative work with a partner. 
 
-Our final session, Chapter [3. Wrap-Up](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/wrap-up.html)  will be used to reflect on what you learned and to find perspectives to keep you going on the OER-path.
+Our final session, [Chapter 3. Wrap-Up](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/wrap-up.html)  will be used to reflect on what you learned and to find perspectives to keep you going on the OER-path.
 
 You will also find some additional information under the section resources. on how to create your course website, which provides more detail than the quick setup guide, along with additional resources for you to explore.
 
