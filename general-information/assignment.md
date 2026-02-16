@@ -1,7 +1,7 @@
 # Now It's Your Turn!
 
 ## First task: Develop your course concept
-Take the next 50 minutes to sketch a first concept for your own course. Focus especially on didactic aspects: not just _what_ you want to teach, but _how_ and _why_. The following guiding questions can help:
+Take the next 15 minutes to sketch a first concept for your own course. Focus especially on didactic aspects: not just _what_ you want to teach, but _how_ and _why_. The following guiding questions can help:
 
 1. What should students know or be able to do at the end of my course?
 2. How can I align my content and teaching methods with the skills, needs, and expectations of my target audience?
@@ -22,7 +22,7 @@ Afterwards, we will come together, and you’ll have the chance to share your id
 
 Now that you have drafted your course concept, it’s time to start building your own course website.
 
-In the next 50 minutes, please:
+In the next 30 minutes, please:
 
 - Use our {doc}`../content/4_additional/quick_tutorial_ws` to help you through the process step-by-step.
 - Start adding your first pages and structure to your site — even small steps count as great progress!
