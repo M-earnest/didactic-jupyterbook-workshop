@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Quick Setup Guide &#8212; Group session: Working collaborative with Jupyter Book</title>
+    <title>Creating OERs &#8212; Group session: Working collaborative with Jupyter Book</title>
   
   
   
@@ -181,7 +181,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Independent Work</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../general-information/assignment.html">Now It’s Your Turn!</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quick Setup Guide</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Creating OERs</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Wrap-Up</span></p>
 <ul class="nav bd-sidenav">
@@ -420,7 +420,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Quick Setup Guide</h1>
+    <h1>Creating OERs</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -441,6 +441,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-table-of-contents">6. <span class="xref myst">Update Table of Contents</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-multiple-courses-with-the-use-this-template-functionality">7. Creating multiple courses with the “Use this template” functionality</a></li>
 </ul>
             </nav>
         </div>
@@ -452,16 +453,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="quick-setup-guide">
-<h1>Quick Setup Guide<a class="headerlink" href="#quick-setup-guide" title="Permalink to this heading">#</a></h1>
-<p>Okay, now let’s get started! With your own course concept in mind, you will learn now how to create and host your Jupyter Book course website.</p>
-<p>If you have any questions, feel free to click on the section titels to dive into the detailed tutorials or get in touch with me!</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="creating-oers">
+<h1>Creating OERs<a class="headerlink" href="#creating-oers" title="Permalink to this heading">#</a></h1>
+<p>Okay, now let’s get started! With your own course concept in mind, you will learn how to create and host your Jupyter Book course website. To do this, we’ll be using <strong>Github Pages</strong>. GitHub Pages allows users to host websites directly from their GitHub repos, creating a website for their personal portfolio, project documentation, or, in this case, course content.</p>
+<p>The website is generated directly from the contents of your GitHub repo and is automatically updated whenever changes are made to the repository.</p>
+<p>If you have any questions, feel free to click on the section titles to dive into the detailed tutorials or get in touch with me!</p>
 <section id="set-up-your-github-account">
 <h2>1. <a class="reference internal" href="../1_github/account.html"><span class="doc std std-doc">Set up your GitHub account</span></a><a class="headerlink" href="#set-up-your-github-account" title="Permalink to this heading">#</a></h2>
-<p>If you haven’t already set up your GitHub account, please go to the <a class="reference internal" href="../1_github/account.html"><span class="doc std std-doc">respective section</span></a>.</p>
+<p>If you haven’t already set up your GitHub account, please go to the <a class="reference internal" href="../1_github/account.html"><span class="doc std std-doc">respective section</span></a>. And remember to choose a sensible username, as they are publicly visible and will be associated with all of your courses.</p>
 </section>
 <section id="copy-our-course-template">
 <h2>2. <a class="reference internal" href="../1_github/project.html"><span class="doc std std-doc">Copy our course template</span></a><a class="headerlink" href="#copy-our-course-template" title="Permalink to this heading">#</a></h2>
+<p>Now there are two ways to continue. We can either “fork” our existing template repo, meaning you create a copy of the repositories contens under your own account, or, which seems more intuitive, click the “use this template” button. Both versions do mostly the same, but an account can only have 1 fork of an existing repository. For subsequent courses, you therefore would have to create copies of your courses or delete the already existing version. The “template” button, unfortunately, leads to some unexpected behaviors as well, but allows the creation of multiple course repositories under the same account. We will start out by explaining how to fork our template and discuss how to use templates at the end of this chapter.</p>
 <p>Let’s copy our ready-to-go course template! It’s the quickest way to get started — simply customize and add your own pages to fit your content, without worrying about setting up a project from scratch.</p>
 <p>1. Go to the GitHub page of our <a class="reference external" href="https://github.com/luciebinder/course-template-minimal">course template</a> and click on “fork”.</p>
 <p><img alt="depicting position a look of the fork button on a GitHub repository" src="../../_images/fork-button.png" /></p>
@@ -470,7 +473,34 @@ document.write(`
 </section>
 <section id="getting-familiar-with-the-course-template">
 <h2>3. <a class="reference internal" href="../1_github/template.html"><span class="doc std std-doc">Getting familiar with the course template</span></a><a class="headerlink" href="#getting-familiar-with-the-course-template" title="Permalink to this heading">#</a></h2>
-<p>Let’s take a look at the structure of the course template:</p>
+<p>The course template repository is structured as follows:</p>
+<p><img alt="depicting the contents of the course template repository on GitHub" src="../../_images/folder-structure_minimal-template.png" /></p>
+<p>Where:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>File/Folder</p></th>
+<th class="text-left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>.github/workflows</strong></p></td>
+<td class="text-left"><p>Contains the prewritten scripts to automatically create your website every time new content is added.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>lecture</strong></p></td>
+<td class="text-left"><p>Contains all our content files and directories, as well as the <code class="docutils literal notranslate"><span class="pre">toc.yml</span></code> (table of content) and the <code class="docutils literal notranslate"><span class="pre">config.yml</span></code> files, which define the structure and functionality of the website.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>README</strong></p></td>
+<td class="text-left"><p>A short explanation of your website/course.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>LICENSE</strong></p></td>
+<td class="text-left"><p>Self-explanatory, stating who and how people are allowed to use or reproduce the content of this repo.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>requirements.txt</strong></p></td>
+<td class="text-left"><p>Contains the necessary requirements for the automatic scripts building the website to run; there is no need to change anything here.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Now, most the things that you’ll be adapting are contained in the content folder “lecture”, which looks like this:</p>
 <p><img alt="depicting the contents of the course template repository on GitHub" src="../../_images/folder-structure_minimal-template.png" /></p>
 <p>Some files can be ignored, as they contain technical information for hosting the website. The majority of what you’ll be modifying is located in the “lecture” content folder, which looks like this:</p>
 <p><img alt="depicting the contents of the course template repository on GitHub" src="../../_images/lecture-folder-structure.png" /></p>
@@ -575,13 +605,22 @@ A workflow in GitHub is an automated process that runs a series of steps in resp
 <p><strong>Congratulations</strong>!</p>
 <p>You’ve created your first course website and added a new file to your table of contents! Now, you can focus on designing a beautiful and engaging site to enrich your teaching and your students’ learning experience.</p>
 <p>To explore what’s possible and learn how to further enhance your content, for example, through formatting or by including multimedia, check out the detailed guide here: <a class="reference internal" href="../3_create/markdown.html"><span class="doc">Formatting Content With Markdown</span></a></p>
+</section>
+<section id="creating-multiple-courses-with-the-use-this-template-functionality">
+<h2>7. Creating multiple courses with the “Use this template” functionality<a class="headerlink" href="#creating-multiple-courses-with-the-use-this-template-functionality" title="Permalink to this heading">#</a></h2>
+<p>As briefly mentioned before, we can only maintain a single fork of an existing repo. Should you want to create more courses we have to use the template functionality provided by GitHub and enabled for our course repository.
+This essentially does the same as the fork with a few differences.</p>
+<p>Img 1 -&gt; select use this template
+Img 2 -&gt; template creation settings</p>
+<p>So far, so good. But if you head over to the actions section, you will see that although you have not enabled said workflows, that a process is already running and given some time will produce the following error.</p>
+<p>img 3 -&gt; actions failure</p>
+<p>This is due to the way templates are handled internally by GitHub. If we jump over to the settings tab and select “actions” -&gt; “general” you will find that the template wase crated with limited permissions, making it impossible for the gh-pages workflow to write to the repository.</p>
+<p>img 4 -&gt; permissions</p>
+<p>If we now correct the permissions and rerun our workflow, the error will disappear, and the website ultimately build.</p>
+<p>img 5 - corrected perms
+img 6 - success workflow
+img 7 - built template website</p>
 <hr class="docutils" />
-<p>For those of you interested in integrating live R code, check out the following resources:</p>
-<ul class="simple">
-<li><p>Our tutorial on how to integrate MyBinder: <a class="reference internal" href="../3_create/interactive2.html"><span class="doc">Making Your Book Truly Interactive</span></a></p></li>
-<li><p>Integrating the RStudie user interface via MyBinder: <a class="reference external" href="https://mybinder.readthedocs.io/en/latest/howto/user_interface.html#rstudio">https://mybinder.readthedocs.io/en/latest/howto/user_interface.html#rstudio</a></p></li>
-<li><p>Choose R as the default language in MyBinder: <a class="reference external" href="https://mybinder.readthedocs.io/en/latest/howto/languages.html#the-r-language">https://mybinder.readthedocs.io/en/latest/howto/languages.html#the-r-language</a></p></li>
-</ul>
 </section>
 </section>
 
@@ -659,6 +698,7 @@ A workflow in GitHub is an automated process that runs a series of steps in resp
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-table-of-contents">6. <span class="xref myst">Update Table of Contents</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-multiple-courses-with-the-use-this-template-functionality">7. Creating multiple courses with the “Use this template” functionality</a></li>
 </ul>
   </nav></div>
 

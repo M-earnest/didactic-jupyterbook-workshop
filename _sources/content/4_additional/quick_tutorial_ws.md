@@ -1,14 +1,20 @@
-# Quick Setup Guide 
+# Creating OERs
 
-Okay, now let's get started! With your own course concept in mind, you will learn now how to create and host your Jupyter Book course website. 
+Okay, now let's get started! With your own course concept in mind, you will learn how to create and host your Jupyter Book course website. To do this, we'll be using **Github Pages**. GitHub Pages allows users to host websites directly from their GitHub repos, creating a website for their personal portfolio, project documentation, or, in this case, course content. 
 
+The website is generated directly from the contents of your GitHub repo and is automatically updated whenever changes are made to the repository. 
 
-If you have any questions, feel free to click on the section titels to dive into the detailed tutorials or get in touch with me! 
+If you have any questions, feel free to click on the section titles to dive into the detailed tutorials or get in touch with me! 
+
 
 ## 1. [Set up your GitHub account](../1_github/account)
-If you haven't already set up your GitHub account, please go to the [respective section](../1_github/account).  
+If you haven't already set up your GitHub account, please go to the [respective section](../1_github/account). And remember to choose a sensible username, as they are publicly visible and will be associated with all of your courses. 
+
 
 ## 2. [Copy our course template](../1_github/project)
+
+Now there are two ways to continue. We can either "fork" our existing template repo, meaning you create a copy of the repositories contens under your own account, or, which seems more intuitive, click the "use this template" button. Both versions do mostly the same, but an account can only have 1 fork of an existing repository. For subsequent courses, you therefore would have to create copies of your courses or delete the already existing version. The "template" button, unfortunately, leads to some unexpected behaviors as well, but allows the creation of multiple course repositories under the same account. We will start out by explaining how to fork our template and discuss how to use templates at the end of this chapter.
+
 Let's copy our ready-to-go course template! It’s the quickest way to get started — simply customize and add your own pages to fit your content, without worrying about setting up a project from scratch. 
 
 1\. Go to the GitHub page of our [course template](https://github.com/luciebinder/course-template-minimal) and click on "fork".
@@ -20,7 +26,21 @@ Let's copy our ready-to-go course template! It’s the quickest way to get start
 ![depicting position a look of the fork button on a GitHub repository](../../static/create-fork.png)
 
 ## 3. [Getting familiar with the course template](../1_github/template)
-Let's take a look at the structure of the course template:
+
+The course template repository is structured as follows:
+
+![depicting the contents of the course template repository on GitHub](../../static/folder-structure_minimal-template.png)
+
+Where:
+| File/Folder | Description | 
+| :----- | :-----|
+| **.github/workflows** | Contains the prewritten scripts to automatically create your website every time new content is added. |
+| **lecture** | Contains all our content files and directories, as well as the `toc.yml` (table of content) and the `config.yml` files, which define the structure and functionality of the website. |
+| **README** | A short explanation of your website/course.|
+| **LICENSE** | Self-explanatory, stating who and how people are allowed to use or reproduce the content of this repo.|
+| **requirements.txt** | Contains the necessary requirements for the automatic scripts building the website to run; there is no need to change anything here. |
+
+Now, most the things that you'll be adapting are contained in the content folder "lecture", which looks like this:
 
 ![depicting the contents of the course template repository on GitHub](../../static/folder-structure_minimal-template.png)
 
@@ -29,6 +49,9 @@ Some files can be ignored, as they contain technical information for hosting the
 ![depicting the contents of the course template repository on GitHub](../../static/lecture-folder-structure.png)
 
 In this folder, you can add your content by editing or creating Markdown files. But before we look at how to edit them, let’s set up your website first. By adjusting a few settings, GitHub Pages can host your website and automatically update it whenever you make changes.
+
+
+
 
 ## 4. [Host your course website](../2_host/host_website)
 
@@ -194,10 +217,30 @@ You've created your first course website and added a new file to your table of c
 To explore what’s possible and learn how to further enhance your content, for example, through formatting or by including multimedia, check out the detailed guide here: {doc}`../3_create/markdown`
 
 
-----
-For those of you interested in integrating live R code, check out the following resources:
 
-- Our tutorial on how to integrate MyBinder: {doc}`../3_create/interactive2`
-- Integrating the RStudie user interface via MyBinder: [https://mybinder.readthedocs.io/en/latest/howto/user_interface.html#rstudio](https://mybinder.readthedocs.io/en/latest/howto/user_interface.html#rstudio)
-- Choose R as the default language in MyBinder: [https://mybinder.readthedocs.io/en/latest/howto/languages.html#the-r-language](https://mybinder.readthedocs.io/en/latest/howto/languages.html#the-r-language)
+
+## 7. Creating multiple courses with the "Use this template" functionality
+
+As briefly mentioned before, we can only maintain a single fork of an existing repo. Should you want to create more courses we have to use the template functionality provided by GitHub and enabled for our course repository.
+This essentially does the same as the fork with a few differences. 
+
+Img 1 -> select use this template
+Img 2 -> template creation settings
+
+So far, so good. But if you head over to the actions section, you will see that although you have not enabled said workflows, that a process is already running and given some time will produce the following error. 
+
+img 3 -> actions failure
+
+This is due to the way templates are handled internally by GitHub. If we jump over to the settings tab and select "actions" -> "general" you will find that the template wase crated with limited permissions, making it impossible for the gh-pages workflow to write to the repository. 
+
+img 4 -> permissions
+
+If we now correct the permissions and rerun our workflow, the error will disappear, and the website ultimately build.
+
+img 5 - corrected perms
+img 6 - success workflow
+img 7 - built template website
+
+----
+
 
