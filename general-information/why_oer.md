@@ -18,6 +18,9 @@ What if your educational resources were not only effective for today’s student
 
 In light of the ongoing push for open science, many universities are striving to make research and education more **inclusive**, and **FAIR** (_Findable, Accessible, Interoperable, and Reusable_). However, conventional educational platforms such as Moodle, OLAT, and ILIAS present significant limitations that are often at odds with these objectives. These proprietary systems introduce several challenges, including **restricted access, high costs, and limited interoperability**. E.g. educators and universities may need to cover costly licenses and maintenance costs or work in closed-off sandboxes, which can hinder their ability to develop and distribute instructional materials cost-free. Additionally, these platforms often lock users into specific ecosystems, complicating collaboration across institutions and disciplines. These constraints inhibit the dynamic and interactive learning environments necessary for contemporary higher education and research.
 
+To further highlight the problem of the walled-of garden that academics have build over the years we would like you to reflect what it means to provide open educational resources. Higher education in Germany has never been decoupled from socio-economic factors or parental educational background. This means we naturally limit our material to the privleged few. Are we only going to provide access to our tax-financed endeavors to local students of a specific semester? What about members of other universities, interested high-school students, teachers who aim to ground their teaching, or just interested members of the general public? Can and should we not further integrate our works into public space?
+
+
 ## What are the main problems with such an approach?
 **Traditional educational platforms present several key issues:**
 
