@@ -449,8 +449,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="hosting-your-course-website">
 <h1>Hosting Your Course Website<a class="headerlink" href="#hosting-your-course-website" title="Permalink to this heading">#</a></h1>
-<p>Now that you have created your own course repo based on the course template, you will learn how to actually turn your course files into a website. To do this, we’ll be using <strong>Github Pages</strong>. GitHub Pages allows users to host websites directly from their GitHub repos, creating a website for their personal portfolio, project documentation, or, in this case, course content.</p>
-<p>The website is generated directly from the contents of your GitHub repo and is automatically updated whenever changes are made to the repository.</p>
+<p>If you read this, you should have already followed our basic tutorial on <a class="reference external" href="https://m-earnest.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html">Creating OERs</a>. You should have a basic understanding on how to create and host a course website so far.</p>
+<p>Here and in the subsequent chapter, we will go into a bit more detail on hosting content via GH Pages, especially what the workflow does and how to deal with problems when building the website.</p>
 <section id="goals">
 <h2>Goals<a class="headerlink" href="#goals" title="Permalink to this heading">#</a></h2>
 <p>This chapter aims to include the following goals:</p>
@@ -465,8 +465,18 @@ document.write(`
 <p>Please take a closer look at the <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> folder, where you’ll find a file called <code class="docutils literal notranslate"><span class="pre">book.yml</span></code>. This file already contains all the instructions necessary for GitHub to build your book automatically. All you need to do now is change a few of the settings of your online repo.</p>
 <section id="setting-up-your-website">
 <h3>Setting Up Your Website<a class="headerlink" href="#setting-up-your-website" title="Permalink to this heading">#</a></h3>
+<p>Create a new repository on GitHub, using the <code class="docutils literal notranslate"><span class="pre">+</span></code> button in the upper right corner.</p>
 <ol class="arabic simple">
-<li><p>Open your repository in your browser and click on “Settings” in the top tab, located on the far right.</p></li>
+<li><p>Upload or create the necessary workflow and structure files</p></li>
+</ol>
+<p>Now you can technicall create your own <code class="docutils literal notranslate"><span class="pre">toc.yml</span></code>, <code class="docutils literal notranslate"><span class="pre">config.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">worklfow</span> <span class="pre">script</span></code> from scratch, but this is generally not recommended. So let’s take the necessary files from the <a class="reference external" href="https://github.com/DiLER-Digitell/course-template-minimal">course template</a>, either by creating new files in your fresh repo or by downloading and subsequently uploading the following files. Make sure to create the necessary folder “lecture” and “.github/workflows” (don’t forgte the dot at the beginning), as the workflows script will look for these folders and fail if it doesnt find them.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/DiLER-Digitell/course-template-minimal/blob/main/lecture/_config.yml">Config</a></p></li>
+<li><p><a class="reference external" href="https://github.com/DiLER-Digitell/course-template-minimal/blob/main/lecture/_toc.yml">ToC</a></p></li>
+<li><p><a class="reference external" href="https://github.com/DiLER-Digitell/course-template-minimal/tree/main/.github/workflows">Worklflow</a></p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Once you are done uploading or creating said files, click on “Settings” in the top tab, located on the far right.</p></li>
 </ol>
 <p><img alt="Image of the tab where the word &quot;Settings&quot; is located on the far right" src="../../_images/settings.png" /></p>
 <ol class="arabic simple" start="2">
@@ -495,7 +505,7 @@ document.write(`
 <li><p>Push a new commit to your repo, i.e. make a change to one file.</p></li>
 </ol>
 <p>Let’s do this together by adding some text to the <code class="docutils literal notranslate"><span class="pre">README</span></code> file, a file that entails some main information on your course.</p>
-<p>Click on “Code” to get back to your file structure. Then, click on the <code class="docutils literal notranslate"><span class="pre">README</span></code> file.</p>
+<p>Click on “Code” to get back to your file structure. Then, click on or create the <code class="docutils literal notranslate"><span class="pre">README</span></code> file if you haven’t done so yet.</p>
 <p><img alt="Image of the upper options, selecting Code." src="../../_images/code.png" /></p>
 <p>Click on the “edit” symbol:</p>
 <p><img alt="Image of the edit button." src="../../_images/edit-readme.png" /></p>

@@ -1,8 +1,8 @@
 # Hosting Your Course Website
 
-Now that you have created your own course repo based on the course template, you will learn how to actually turn your course files into a website. To do this, we'll be using **Github Pages**. GitHub Pages allows users to host websites directly from their GitHub repos, creating a website for their personal portfolio, project documentation, or, in this case, course content. 
+If you read this, you should have already followed our basic tutorial on [Creating OERs](https://m-earnest.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html). You should have a basic understanding on how to create and host a course website so far.
 
-The website is generated directly from the contents of your GitHub repo and is automatically updated whenever changes are made to the repository. 
+Here and in the subsequent chapter, we will go into a bit more detail on hosting content via GH Pages, especially what the workflow does and how to deal with problems when building the website.
 
 ## Goals
 This chapter aims to include the following goals:
@@ -17,7 +17,19 @@ Please take a closer look at the `.github/workflows` folder, where you'll find a
 
 ### Setting Up Your Website
 
-1. Open your repository in your browser and click on "Settings" in the top tab, located on the far right.
+Create a new repository on GitHub, using the `+` button in the upper right corner. 
+
+1. Upload or create the necessary workflow and structure files
+
+Now you can technicall create your own `toc.yml`, `config.yml` and `worklfow script` from scratch, but this is generally not recommended. So let's take the necessary files from the [course template](https://github.com/DiLER-Digitell/course-template-minimal), either by creating new files in your fresh repo or by downloading and subsequently uploading the following files. Make sure to create the necessary folder "lecture" and ".github/workflows" (don't forgte the dot at the beginning), as the workflows script will look for these folders and fail if it doesnt find them.
+
+- [Config](https://github.com/DiLER-Digitell/course-template-minimal/blob/main/lecture/_config.yml)
+
+- [ToC](https://github.com/DiLER-Digitell/course-template-minimal/blob/main/lecture/_toc.yml)
+
+- [Worklflow](https://github.com/DiLER-Digitell/course-template-minimal/tree/main/.github/workflows)
+
+2. Once you are done uploading or creating said files, click on "Settings" in the top tab, located on the far right.
 
 ![Image of the tab where the word "Settings" is located on the far right](../../static/settings.png)
 
@@ -49,7 +61,7 @@ This should look like this now. Don't forget to click on save.
 
 Let's do this together by adding some text to the `README` file, a file that entails some main information on your course. 
 
-Click on "Code" to get back to your file structure. Then, click on the `README` file. 
+Click on "Code" to get back to your file structure. Then, click on or create the `README` file if you haven't done so yet.
 
 ![Image of the upper options, selecting Code.](../../static/code.png)
 
