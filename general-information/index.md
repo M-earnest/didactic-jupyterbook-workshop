@@ -3,7 +3,7 @@
 
 Welcome everyone to our course on "Creating Open Eductaional Resources for Higher Eductaion using Jupyter Books" hosted by  [Grade](https://www.grade.uni-frankfurt.de/51934152/GRADE___Die__Post__Graduiertenakademie_der_Goethe_Universit%C3%A4t) at the Goethe University Frankfurt. If you wonder what Open Educational Resources are, we will spend some time on that question later, but you're already looking at one of them. In short, this course will teach you how to create a resource like the one you're looking at right now.
 
-These matrieals are part of the [DiLER](https://diler-digitell.github.io/intro.html) project (a partnership of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) at Goethe University Frankfurt) that aims to provide open and free content to promote key digital skills for working in academia/empirical sciences. We aim to encourage and support other course instructors to take advantage of our open-source tools to enhance and credit their coursework.
+This workshop is part of the [DiLER](https://diler-digitell.github.io/intro.html) project (a partnership of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) at Goethe University Frankfurt) that aims to provide open and free content to promote key digital skills for working in academia/empirical sciences. We aim to encourage and support other course instructors to take advantage of open-source tools to enhance and profit from their own coursework.
 
 The workshop will take place from 10.15 to 14.00 on the 18th February, 2026 in room number 03.C107 (3d floor, building part C) at the Sprach- und Kulturwissenschaften (SKW) Building of the Campus Westend. 
 
@@ -27,11 +27,11 @@ We will come back to visit these objectives at the end of the course and see whe
 
 ## Course Structure
 
-[Chapter 0. Preparation](https://m-earnest.github.io/didactic-jupyterbook-workshop/content/account.html) will lead you through the basic prerequisities to follow along. All you really need is a PC/Tablet, a GitHub account and a modern browser (chrome, firefox etc.).
+[Chapter 0. Preparation](https://m-earnest.github.io/didactic-jupyterbook-workshop/content/account.html) will lead you through the basic prerequisites to follow along. All you really need is a PC/Tablet, a GitHub account, and a modern browser (chrome, firefox etc.).
 
-[Chapert 1. Open Educational Resources](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/why_oer.html) will provide context, discuss the didactic opportunities/benefits of using open and accessible teaching materials and show you why we believe that our approach to OER is worthwile.
+[Chapert 1. Open Educational Resources](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/why_oer.html) will provide context, discuss the didactic opportunities/benefits of using open and accessible teaching materials and show you why we believe that our approach to OER is worthwhile.
 
-[Chapter 2. Creating your own OER](m-earnest.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html) will walk you through the process of creating, adapting and hosting your own course materials. You will also learn how to make your courses more interactive and how to use GitHub to collaborate with others.
+[Chapter 2. Creating your own OER](m-earnest.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html) will walk you through the process of creating, adapting, and hosting your own course materials. You will also learn how to make your courses more interactive and how to use GitHub to collaborate with others.
 
 Following the guided group session, you will have time to actively flesh out [your own course concept](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/assignment.html) or to plan collaborative work with a partner. 
 
@@ -47,9 +47,9 @@ We, the DiLER team, believe that education should be open to as many people as p
    
 ## Where is everything?
 
-All materials will be available on this very website. Everything will be completely open and free to use. You are free to explore, enhance, and share given appropriate citation. Thus, this website and all materials will also remain up ideally until the end of the internet, but will possibly be subject to changes and updates. If you feel the need to save this resource as it is at the moment you’re reading this, you can download the complete course from our GitHub repo [here](https://github.com/M-earnest/didactic-jupyterbook-workshop)). The usage of this resource and the materials therein will be explained at the beginning and throughout the course. The course will be fully web-based/online, you do not need to download or install anything (although we heavily encourage you to make local copies of your coursework).
+All materials will be available on this very website. Everything will be completely open and free to use. You are free to explore, enhance, and share given appropriate citation. Thus, this website and all materials will also remain up ideally until the end of the internet, but will possibly be subject to changes and updates. If you feel the need to save this resource as it is at the moment you’re reading this, you can download the complete course from our GitHub repo [here](https://github.com/M-earnest/didactic-jupyterbook-workshop)). The usage of this resource and the materials therein will be explained at the beginning and throughout the course. The course will be fully web-based/online. You do not need to download or install anything (although we heavily encourage you to make local copies of your coursework)!
 
-We will also be providing a course template that will serve as a tool for our practical examples and can be downloaded [here](https://github.com/DiLER-Digitell/course-template-minimal). The template contains a folder structure, some example content files, a license, an open science statement, an equity, diversity, and inclusion statement, as well as a code of conduct for your course. This template is serves as a starting point to generate your own course. Simply add your content or adapt the preexisting resources, adapt the structure to your liking, and upload the whole thing to an online GitHub repository, and your course website will be created automatically.
+We will also be providing a course template that will serve as a tool for our practical examples and can be downloaded [here](https://github.com/DiLER-Digitell/course-template-minimal). The template contains a folder structure, some example content files, a license, an open science statement, an equity, diversity, and inclusion statement, as well as a code of conduct for your course. This template serves as a starting point to generate your own course. Simply add your content or adapt the preexisting resources, adapt the structure to your liking, and upload the whole thing to an online GitHub repository, and your course website will be created automatically.
 
 ### How to reach the content creators
 
