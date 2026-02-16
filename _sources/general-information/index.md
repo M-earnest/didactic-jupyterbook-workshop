@@ -7,7 +7,6 @@ The workshop will take place on the 18th February, 2026 in room number 03.C107 (
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.32300470476!2d8.665866576883444!3d50.13051687153289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd09d9012f42f5%3A0x8619950779cd34c5!2sSprach-%20und%20Kulturwissenschaften%20(SKW)!5e1!3m2!1sen!2sde!4v1771248033443!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-
 This workshop is part of the [DiLER](https://diler-digitell.github.io/intro.html) project (a partnership of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) at Goethe University Frankfurt) that aims to provide open and free educational resources to promote key digital skills for working in academia/empirical sciences. We aim to empower course instructors to take advantage of interactive, flexible, and open-source tools to enhance their coursework.
 
 ## What are the objectives of this workshop
@@ -38,7 +37,7 @@ We, the DiLER team, believe that education should be open to as many people as p
    
 ## Where is everything?
 
-All materials will be available on this very website. Everything will be completely open and free to use. You are free to explore, enhance, and share given appropriate citation. Thus, this website and all materials will also remain up ideally until the end of the internet, but will possibly be subject to changes and updates. If you feel the need to save this resource as it is at the moment you’re reading this, you can download the complete course from our GitHub repo [here](https://github.com/M-earnest/didactic-jupyterbook-workshop)). The usage of this resource and the materials therein will be explained at the beginning and throughout the course.
+All materials will be available on this very website. Everything will be completely open and free to use. You are free to explore, enhance, and share given appropriate citation. Thus, this website and all materials will also remain up ideally until the end of the internet, but will possibly be subject to changes and updates. If you feel the need to save this resource as it is at the moment you’re reading this, you can download the complete course from our GitHub repo [here](https://github.com/M-earnest/didactic-jupyterbook-workshop)). The usage of this resource and the materials therein will be explained at the beginning and throughout the course. The course will be fully web-based/online, you do not need to download or install anything (although we heavily encourage you to make local copies of your coursework).
 
 We will also be providing a course template that will serve as a tool for our practical examples and can be downloaded [here](https://github.com/DiLER-Digitell/course-template-minimal). The template contains a folder structure, some example content files, a license, an open science statement, an equity, diversity, and inclusion statement, as well as a code of conduct for your course. This template is serves as a starting point to generate your own course. Simply add your content or adapt the preexisting resources, adapt the structure to your liking, and upload the whole thing to an online GitHub repository, and your course website will be created automatically.
 
