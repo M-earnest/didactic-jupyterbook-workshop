@@ -50,12 +50,13 @@ Instead of manually editing strings, you can also use the official interface to 
 1. **Go to:** [https://colab.research.google.com/github/](https://colab.research.google.com/github/)
 2. **Paste your GitHub URL:** In the search bar, paste the link to your repository or the specific notebook file.
 
-<img src="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/collab_link.png" alt="MyBinder Set-Up" width="1000">
+![Image](../../static/collab_link.png)
+
 
 3. **Select your file:** Colab will show a list of `.ipynb` files in that repo. Click the one you want.
 
-<img src="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/collab_notebook_view.png" alt="MyBinder Set-Up" width="1000">
 
+![Image](../../static/collab_notebook_view.png)
 
 5. **Copy the result:** Once the notebook opens in Colab, simply **copy the URL from your browser's address bar**. 
 
@@ -993,6 +994,7 @@ Result:
 - [Interactive Lesson 1](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-vh69jda2/voila/render/interactives/likert_feedback.ipynb?token=fw2weHheQ8O_fKTV7_gu8g)
 - [Interactive Lesson 2](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-pa7p6d1q/voila/render/interactives/MCQ_feedback.ipynb?token=oVQgz0PgSN2AHHpwnwicow)
 - [Interactive Lesson 3](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-5jc36rwc/voila/render//interactives/visualSearch.ipynb?token=OjirzmXOQIqJEkNJAIl70w)
+
 
 
 
