@@ -129,6 +129,54 @@ Result:
 Note that if you're using a local file path, the path should be relative to the location of the Markdown file that you're embedding the GIF in. If you're using a URL, it should be a direct link to the GIF file.
 ```
 
+
+## Audio
+Just like videos and GIFs, you can integrate audio into your course using either `iframes` for external services or standard HTML tags for files hosted in your `static` folder.
+
+### Using public backends
+If you want to embed music, podcasts, or playlists from platforms like Spotify or SoundCloud, you will use an `iframe` element.
+
+**Example: Spotify integration**
+
+```
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3GJ6jnDrapgXAmxEXO6fWw?utm_source=generator" 
+        width="100%" height="352" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+</iframe>
+```
+
+Result:
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3GJ6jnDrapgXAmxEXO6fWw?utm_source=generator" 
+        width="100%" height="352" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+</iframe>
+
+### Using uploaded files
+For audio files that you have uploaded directly to your repository (e.g., in the `static` folder), use the `<audio>` tag to generate a native player.
+
+**Example: Hosted .wav file**
+```
+<audio controls>
+  <source src="https://github.com/M-earnest/didactic-jupyterbook-workshop/raw/refs/heads/main/static/beethoven_demo.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+```
+
+Result:
+
+<audio controls>
+  <source src="https://github.com/M-earnest/didactic-jupyterbook-workshop/raw/refs/heads/main/static/beethoven_demo.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+
+| Keyword | Description | 
+| ----- | -----|
+|`<audio controls>` | The HTML tag that displays the play/pause button, progress bar, and volume controls. |
+|`<source src="...">` | Specifies the path to your audio file. Use relative paths for local files or direct URLs for hosted ones. |
+|`type="audio/wav"` | Defines the file format so the browser knows how to play it (e.g., `audio/wav` or `audio/mpeg`). |
+
 ___
 
 There are plenty of other datatypes you can add! This section is only a short introduction to the embedding of media.
