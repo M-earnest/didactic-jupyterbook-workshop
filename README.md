@@ -1,3 +1,9 @@
+
+
+[![DOI](https://zenodo.org/badge/1151294523.svg)](https://doi.org/10.5281/zenodo.18673703)
+
+
+
 ![logo](static/logo.png)
 
 # What's in this repository?
