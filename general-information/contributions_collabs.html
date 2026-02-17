@@ -192,7 +192,6 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Working Collaboratively</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="assignment.html">Now It’s Your Turn!</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Wrap-Up</span></p>
@@ -427,16 +426,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Working Collaboratively</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-collaborators">1. Adding Collaborators.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-collaborators">1. Adding Collaborators.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-collaborators">Working with collaborators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-branches-ordered-collabs">Working with Branches: Ordered collabs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-pull-request-merging-branches">The Pull Request: Merging branches</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-and-tricks">Notes and tricks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-info-on-fork-pull-merge">More info on Fork/Pull/Merge</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -458,84 +455,43 @@ You can do so by navigating to the settings -&gt; collaborators page of your rep
 <p>img collabs</p>
 <p><img alt="Image" src="../_images/collaborators.png" /></p>
 <p>Search for people via their GitHub Username, Email, etc., and click <em>Add to repository</em>.</p>
-<p><img alt="Image showing the GitHub settings where collaborators are added" src="../_images/search_people.png" /></p>
+<p><img alt="Image" src="../_images/search_people.png" /></p>
 <p>Now simply wait for them to accept your invite.</p>
-<p>1.2</p>
-<p>Once they have done so, you can click the pencil icon net to their name and assigne roles/rights. In general only the owner of the repo will have all possible rights, e.g. the right to delete the repository. To allow others to create and modify the content of your repo, you will have to give them “write” access.
-Here are some common roles/rights associated with certain collaborative positions.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>Role</p></th>
-<th class="text-left head"><p>Best For…</p></th>
-<th class="text-left head"><p>Can Push Code?</p></th>
-<th class="text-left head"><p>Can Merge PRs?</p></th>
-<th class="text-left head"><p>Can Delete Repo?</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><strong>Read</strong></p></td>
-<td class="text-left"><p>Non-code contributors, auditors</p></td>
-<td class="text-left"><p>No</p></td>
-<td class="text-left"><p>No</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><strong>Triage</strong></p></td>
-<td class="text-left"><p>Project managers, issue triagers</p></td>
-<td class="text-left"><p>No</p></td>
-<td class="text-left"><p>No</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><strong>Write</strong></p></td>
-<td class="text-left"><p>Standard developers</p></td>
-<td class="text-left"><p><strong>Yes</strong></p></td>
-<td class="text-left"><p><strong>Yes</strong></p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><strong>Maintain</strong></p></td>
-<td class="text-left"><p>Project leads</p></td>
-<td class="text-left"><p><strong>Yes</strong></p></td>
-<td class="text-left"><p><strong>Yes</strong></p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><strong>Admin</strong></p></td>
-<td class="text-left"><p>Owners/Co-founders</p></td>
-<td class="text-left"><p><strong>Yes</strong></p></td>
-<td class="text-left"><p><strong>Yes</strong></p></td>
-<td class="text-left"><p><strong>Yes</strong></p></td>
-</tr>
-</tbody>
-</table>
-<p>1.3 Working with collaboratos</p>
-<p>As collaboratos have full access to the repository and should have write access by now, you can simply select one of the files and start making changes or create new files for your contributions.
-Navigate to the “general information” folder of your partners repository. Click “Add file”, give your contribution a name and make sure it ends with <code class="docutils literal notranslate"><span class="pre">.md</span></code> (so that GitHub knows we want a markdown formatted file).</p>
-<p>img create_file</p>
+<section id="working-with-collaborators">
+<h3>Working with collaborators<a class="headerlink" href="#working-with-collaborators" title="Permalink to this heading">#</a></h3>
+<p>As collaborators on private repositories have full access to the project and default have write access, you can simply select one of the files and start making changes or create new files for your contributions.</p>
+<p>Navigate to the “general information” folder of your partners repository. Click “Add file”, give your contribution a name and make sure it ends with <code class="docutils literal notranslate"><span class="pre">.md</span></code> (so that GitHub knows we want a markdown formatted file).</p>
+<p><img alt="Image" src="../_images/create_file.png" /></p>
 <p>Now simply add a header, do so by declaring the first line of the document as the title via the use of a single hash, e.g. your title could be</p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="notes-and-tricks">
-<h1>Notes and tricks<a class="headerlink" href="#notes-and-tricks" title="Permalink to this heading">#</a></h1>
-<p>Note that this will be rendered as the title of the newly created webpage in the table of contents on your rendered website. To actually make this visible we are still missing one final step, though.
-So add some notes or a friendly message to your partner and click “commoit changes” in the upper right hand corner.</p>
-<p>In the commit view add an informative title and describe the changes you have made in as much detail as necessary.</p>
-<p>img commit_file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Notes and things</span>
+</pre></div>
+</div>
+<p>Note that everything behind the hashtag will be rendered as the title of the newly created webpage in the table of contents on your rendered website. To make these changes visible, we are still missing one final step, though.</p>
+<p>So add some notes or a friendly message to your partner and click “commit changes” in the upper right hand corner.</p>
+<p>In the commit view, add an informative title and describe the changes you have made in as much detail as necessary.</p>
+<p><img alt="Image" src="../_images/commit_changes.png" /></p>
 <p>To make the newly created content appear on the website, we have to add the new file to our <code class="docutils literal notranslate"><span class="pre">toc.yml</span></code>. Jump back into the <a class="reference external" href="https://diler-digitell.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html">Creating OER tutorial</a> to recall how to do this.</p>
 <p>Once you have committed the changes to the <code class="docutils literal notranslate"><span class="pre">toc.yml</span></code>, you can check the actions workflows and following, the course website to view your rendered contributions.</p>
 <p>So congratulations, you now know how to leverage the central hub of the global software development economy to manage your own projects! You can now effectively declare that you are using the “gold standard” frameworks of the tech industry for collaborative coding and software project management.</p>
-<p>1.4 A Safety Net: Working with Branches</p>
-<p>While editing files directly on the main page works, it comes with a risk. Imagine if you and your partner both try to rewrite the introduction chapter at the exact same time. Who wins? Usually, this will result in one of two things, either the last person to click “Commit” overwrites the other person’s work, or GitHub declares a “conflict”.</p>
+</section>
+<section id="working-with-branches-ordered-collabs">
+<h3>Working with Branches: Ordered collabs<a class="headerlink" href="#working-with-branches-ordered-collabs" title="Permalink to this heading">#</a></h3>
+<p>While editing files directly on the main page works, it comes with a risk. Imagine if you and your partner both try to rewrite the introduction chapter at the exact same time. Who wins? Usually, this will result in one of two things, either the last person to click “Commit” overwrites the other person’s work, or GitHub declares a “merge conflict”. Meaning that you will be asked to manually decide which version of the file you will want to keep.</p>
 <p>To avoid this chaos, developers use <code class="docutils literal notranslate"><span class="pre">Branches</span></code>.</p>
 <p>Think of the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch (the one you are working on now, check screenshot) as the “published” version of your book. It should always be clean and error-free.</p>
-<p>When you want to try a new idea, the standard should be to create a new “branch”, which is like creating your own copy of the project to a separate room to scribble on it safely. If you mess up, you can just throw the copy away without hurting or in any way changing the original files. If you like it, you “merge” it back in.</p>
-<p>Here is how to do it in the browser:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Create/Select a Branch: On the main page of the repository, look for the dropdown button on the left that says main. Click it and type a new name for your workspace (e.g., draft-chapter-1). Click Create branch....
-
-img create_branch
-
-Make Changes: You are now working in your own parallel universe! You can edit files, delete things, or add new notes exactly as we did in step 1.3. None of this affects the main view yet.
-
-The Pull Request (Merging): Once you are happy with your edits, you need to tell your partner (and the system) to pull your changes into the main version.
-
-    Click the Pull Requests tab at the top.
+<p><img alt="Image" src="static/main_branch.png" /></p>
+<p>When you want to try a new idea, the standard should be to create a new “branch”, i.e. making your own copy of the project at its current state and taking it to a separate room to implement some of your ideas. If you mess up or break something, you can just throw the copy away without changing the original files. If you like it, you “merge” it back in.</p>
+<p>Let’s try this.</p>
+<p>Create a new Branch: On the main page of the repository, look for the dropdown button on the left that says main. Click it and type a new name for your workspace (e.g., draft-chapter-1). Click Create branch….</p>
+<p><img alt="Image" src="static/view_branch.png" /></p>
+<p>Now make some changes. You are now working in your own parallel universe! You can edit files, delete things, or add new notes exactly as we did previously. None of this affects the main view yet. You can check this by switching between branches. Simply click on the branch dropdown again and select the branch you want to view. If you have e.g. created a new file in your new draft-chapter-1 branch, the file should only appear on this branch, but not in your main branch.</p>
+</section>
+<section id="the-pull-request-merging-branches">
+<h3>The Pull Request: Merging branches<a class="headerlink" href="#the-pull-request-merging-branches" title="Permalink to this heading">#</a></h3>
+<p>Once you are done with your edits, you need to tell your partner (and the GH) to pull your changes into the main version. After making changes to your branch, a new pop-up will appear at the top of yyur repo.</p>
+<p><img alt="Image" src="static/pull_request_button.png" /></p>
+<p>Click the</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    Click the Pull Requests tab at the top.
 
     Click New Pull Request.
 
@@ -597,6 +553,8 @@ Merge: If everything looks good, they click the green Merge Pull Request button.
 </pre></div>
 </div>
 <p>This “Fork &amp; Pull” model is essential for massive open-source projects like Linux and allows one to manage thousands of strangers working together. I’m certain it will be usefull for your projects as well.</p>
+</section>
+</section>
 <section id="more-info-on-fork-pull-merge">
 <h2>More info on Fork/Pull/Merge<a class="headerlink" href="#more-info-on-fork-pull-merge" title="Permalink to this heading">#</a></h2>
 </section>
@@ -665,16 +623,14 @@ Merge: If everything looks good, they click the green Merge Pull Request button.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Working Collaboratively</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-collaborators">1. Adding Collaborators.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-collaborators">1. Adding Collaborators.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-collaborators">Working with collaborators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-branches-ordered-collabs">Working with Branches: Ordered collabs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-pull-request-merging-branches">The Pull Request: Merging branches</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-and-tricks">Notes and tricks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-info-on-fork-pull-merge">More info on Fork/Pull/Merge</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
