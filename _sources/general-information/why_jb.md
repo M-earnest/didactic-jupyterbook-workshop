@@ -49,17 +49,31 @@ to create such a list:
 **Image/Gif integration** 🖼️
 <iframe src="https://giphy.com/embed/YPzvV7N0Cnlbbrigvp" width="480" height="271" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bigbangtheory-season-1-episode-9-big-bang-theory-YPzvV7N0Cnlbbrigvp">via GIPHY</a></p>
 
-**Audio integration** 🎧  
+**Audio integration** 🎧
+
+Using public backends:
+
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3GJ6jnDrapgXAmxEXO6fWw?utm_source=generator" 
         width="100%" height="352" frameborder="0" 
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
 </iframe>
 
+Using uploaded files:
+  
+
+
+<audio controls>
+  <source src="https://github.com/M-earnest/didactic-jupyterbook-workshop/raw/refs/heads/main/static/beethoven_demo.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
 **Video integration** 📺  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9YuNGB3vNOw?si=dPCD8xeLaUuimvYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Integration of presentations** 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTJvUAN-dg7r7Dbj-KpxcNO6ssd7akDQjBbHzhTTBBU7zSBZ4sTfjYPtHZL6V7GmM0VQvo6Aviu5oSG/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1jZHqMEj0IXVMGVWH-oasVrmvfTdMn1ODyXeblWUHWCk/edit?slide=id.g23798f94756_0_73#slide=id.g23798f94756_0_73" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
 ````
 
 ```{dropdown} 3. Collaboration and sharing
