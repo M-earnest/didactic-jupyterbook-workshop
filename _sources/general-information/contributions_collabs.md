@@ -39,13 +39,11 @@ Now simply add a header, do so by declaring the first line of the document as th
 # Notes and things
 ```
 
-Note that everything behind the hashtag will be rendered as the title of the newly created webpage in the table of contents on your rendered website. To make these changes visible, we are still missing one final step, though. 
-
-So add some notes or a friendly message to your partner and click "commit changes" in the upper right hand corner. 
+Note that everything behind the hashtag will be rendered as the title of the newly created webpage in the table of contents on your rendered website. To make these changes visible, we are still missing one final step, though. So add some notes or a friendly message to your partner and click "commit changes" in the upper right hand corner. 
 
 In the commit view, add an informative title and describe the changes you have made in as much detail as necessary.
 
-![Image](../static/commit_changes.png)
+![Image](../static/committing.png)
 
 To make the newly created content appear on the website, we have to add the new file to our `toc.yml`. Jump back into the [Creating OER tutorial](https://diler-digitell.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html) to recall how to do this.
 
