@@ -87,7 +87,7 @@ Using uploaded files:
 
 Here, I have added my colleague to the project:
 
-![Image showing the GitHub settings where collaborators are added](../static/collaborators.png)
+![Image showing the GitHub settings where collaborators are added](../static/added_collab.png)
 
 Now, both of us can track all changes (called _commits_) made to the project:
 
