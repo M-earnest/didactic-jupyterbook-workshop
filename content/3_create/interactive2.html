@@ -453,6 +453,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mixing-static-content-with-interactive-elements">Mixing Static Content with Interactive Elements</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ideal-format">The Ideal Format</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-do-it">How to Do It</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-the-dashboard-code">How to Use the Dashboard Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-does">What this does:</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -533,11 +537,11 @@ document.write(`
 <h3>Adding the “Open in Colab” Badge<a class="headerlink" href="#adding-the-open-in-colab-badge" title="Permalink to this heading">#</a></h3>
 <p>To make the link stand out in your Jupyter Book, use the official Colab badge markdown:</p>
 <p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/your_repository/blob/main/interactives/multiple_choice_task.ipynb)
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/M-earnest/didactic-jupyterbook-workshop/blob/main/interactives/quiz_test_collab.ipynb)
 </pre></div>
 </div>
 <p>Result:
-<a class="reference external" href="https://colab.research.google.com/github/your_username/your_repository/blob/main/interactives/multiple_choice_task.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<a class="reference external" href="https://colab.research.google.com/github/M-earnest/didactic-jupyterbook-workshop/blob/main/interactives/quiz_test_collab.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 </section>
 </section>
 <section id="mybinder-turning-notebooks-into-web-apps">
@@ -1333,12 +1337,11 @@ The badge is a clickable image that opens the environment when clicked. You can 
 </section>
 <section id="step-5-add-required-packages">
 <h3><strong>Step 5:</strong> Add Required Packages<a class="headerlink" href="#step-5-add-required-packages" title="Permalink to this heading">#</a></h3>
-<p>Go to your <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file in your repository and add the following lines:</p>
+<p>To ensure MyBinder can actually run our notebooks, we have to install the necessary packages. This is simply done by locating the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file in your repository and addinf the following lines:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>voila
 ipywidgets
 </pre></div>
 </div>
-<p>This ensures MyBinder installs everything needed to run your interactive quiz.</p>
 </section>
 </section>
 <hr class="docutils" />
@@ -1377,6 +1380,19 @@ You want <strong>everything in one place</strong> — the explanations, the visu
 <li><p>Add the file to your <code class="docutils literal notranslate"><span class="pre">interactives</span></code> folder.</p></li>
 <li><p>Launch it using <strong>MyBinder</strong> like this:</p></li>
 </ol>
+</section>
+<section id="how-to-use-the-dashboard-code">
+<h3>How to Use the Dashboard Code<a class="headerlink" href="#how-to-use-the-dashboard-code" title="Permalink to this heading">#</a></h3>
+<p>To create a navigation menu for your participants, <strong>paste the Markdown block below into any <code class="docutils literal notranslate"><span class="pre">.md</span></code> file</strong> in your project where you want the menu to appear (for example, at the end of a chapter or on a dedicated “Activities” page).</p>
+<section id="what-this-does">
+<h4>What this does:<a class="headerlink" href="#what-this-does" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Creates a Heading:</strong> It generates a section titled <code class="docutils literal notranslate"><span class="pre">Course</span> <span class="pre">Dashboard</span></code>.</p></li>
+<li><p><strong>Generates a Menu:</strong> It creates a bulleted list of clickable links.</p></li>
+<li><p><strong>Launches Sessions:</strong> Each link acts as a “Launch Trigger” that sends a participant to their own <strong>isolated, fresh session</strong> (using the Voilà interface) so they can interact with the notebook without seeing the underlying code.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Paste this into your Markdown file:</strong></p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Course Dashboard</span>
 
 <span class="k">-</span><span class="w"> </span>[<span class="nt">Interactive Lesson 1</span>](<span class="na">https://mybinder.org/v2/gh/your_user_name/yourCourse/main/?urlpath=voila%2Frender%2Finteractives%2Finteractive_lesson_1.ipynb</span>)
@@ -1384,6 +1400,7 @@ You want <strong>everything in one place</strong> — the explanations, the visu
 <span class="k">-</span><span class="w"> </span>[<span class="nt">Interactive Lesson 3</span>](<span class="na">https://mybinder.org/v2/gh/your_user_name/yourCourse/main/?urlpath=voila%2Frender%2Finteractives%2Finteractive_lesson_3.ipynb</span>)
 </pre></div>
 </div>
+</section>
 </section>
 </section>
 </section>
@@ -1480,6 +1497,10 @@ You want <strong>everything in one place</strong> — the explanations, the visu
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mixing-static-content-with-interactive-elements">Mixing Static Content with Interactive Elements</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ideal-format">The Ideal Format</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-do-it">How to Do It</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-the-dashboard-code">How to Use the Dashboard Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-does">What this does:</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
