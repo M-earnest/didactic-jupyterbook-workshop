@@ -21,13 +21,67 @@ While GitHub Pages is a powerful way to host educational resources, it is fundam
 * __Dynamic visualizations__ won’t work natively.
 * __Interactive widgets__ and real-time feedback elements will appear static.
 
-This limitation can be a barrier to effective engagement, especially when learners need to test code, manipulate inputs, or receive personalized feedback based on their answers.
+This limitation can be a barrier to effective engagement, especially when learners need to test code, manipulate inputs, or receive personalized feedback based on their answers. There are different ways to solve this issue. We will present two approaches, each with a different focus. 
 
-## Enter MyBinder
+## Google Colab 
 
-To overcome the limitations of static sites, <strong>MyBinder</strong> provides an elegant solution. 
+ **Google Colab** is great for hosting interactive Jupyter notebooks (remember those?). Jupyter notebooks can contain a mixture of code, narrative text, and media elements (via markdown). Google Collab helps us host and share these materials with our participants. 
+ 
+The service is actually quiet fast at launch and provides a stable, cloud-based computation environment, so that each of your participants, independent of their hardware, can take part in your interactive lessons.
+ 
+When you link a notebook stored in your GitHub repository to Google Colab, every participant who clicks the link starts their own **personal, fresh session**. Any changes they make or code they run stays in their temporary environment. If they want to keep their work, they can download a copy or save their work to their own Google Drive, leaving your original GitHub file untouched.
 
-MyBinder is a free and open-source service that runs on Jupyter Notebooks __without requiring any local installation__. It allows users to create and share __live__ versions of notebooks for delivering interactive learning activities. You can configure MyBinder with a specific environment, datasets, and code to ensure reproducibility. You can __create and share a link__ that launches a ready-to-use version of your content.
+### How to Create a "Personal Session" Link
+
+You can build a direct launch link by combining the Colab base URL with your GitHub file path. 
+
+**The URL structure is:**
+`https://colab.research.google.com/github/<YOUR_USERNAME>/<YOUR_REPO>/blob/<BRANCH>/<PATH_TO_FILE>.ipynb`
+
+### Step-by-Step: Hosting on GitHub for Colab
+
+1. **Push your notebook** to your GitHub repository (e.g., inside the `interactives/` folder) via `Add File` -> `Upload`.
+2. **Construct the Link**:
+   * Locate your file on GitHub: `https://github.com/user/repo/blob/main/interactives/quiz_1.ipynb`
+   * Replace `github.com` with `colab.research.google.com/github`.
+  
+Instead of manually editing strings, you can also use the official interface to generate your link:
+
+1. **Go to:** [https://colab.research.google.com/github/](https://colab.research.google.com/github/)
+2. **Paste your GitHub URL:** In the search bar, paste the link to your repository or the specific notebook file.
+
+<img src="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/collab_link.png" alt="MyBinder Set-Up" width="1000">
+
+3. **Select your file:** Colab will show a list of `.ipynb` files in that repo. Click the one you want.
+
+<img src="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/collab_notebook_view.png" alt="MyBinder Set-Up" width="1000">
+
+
+5. **Copy the result:** Once the notebook opens in Colab, simply **copy the URL from your browser's address bar**. 
+
+That URL is your "Fresh Session" link. Anyone you give it to will get their own independent copy
+
+**Example:**
+[Click here to launch the quiz on Google Colab](https://colab.research.google.com/github/M-earnest/didactic-jupyterbook-workshop/blob/main/interactives/quiz_test_collab.ipynb)
+
+### Adding the "Open in Colab" Badge
+To make the link stand out in your Jupyter Book, use the official Colab badge markdown:
+
+Code:
+```
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/your_repository/blob/main/interactives/multiple_choice_task.ipynb)
+```
+
+Result:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/your_repository/blob/main/interactives/multiple_choice_task.ipynb)
+
+
+
+## MyBinder: Turning Notebooks into Web Apps
+
+While **Google Colab** is excellent for sharing a standard notebook environment where users can see and edit code, you might sometimes want a cleaner, "app-like" interface that hides the code and focuses entirely on the interactive elements. 
+
+This is where **MyBinder** excels. It allows you to transform your Jupyter Notebooks into live, standalone webpages, essentially launching notebooks directly into a "rendered" mode, providing a more polished experience for non-technical learners. By combining MyBinder and [Voilà](https://voila.readthedocs.io/en/stable/deploy.html), you can turn a notebook into a dashboard or quiz where the user only sees the questions and feedback, not the Python code behind them. You can configure MyBinder with a specific environment, datasets, and code to ensure reproducibility. You can __create and share a link__ that launches a ready-to-use version of your content.
 
 MyBinder enables:
 
@@ -916,5 +970,5 @@ Use a single Jupyter Notebook that:
 - [Interactive Lesson 3](https://mybinder.org/v2/gh/your_user_name/yourCourse/main/?urlpath=voila%2Frender%2Finteractives%2Finteractive_lesson_3.ipynb)
 ```
 
-## Next section:
-In the next section, you will learn how to integrate citations and bibliographies.
+
+
