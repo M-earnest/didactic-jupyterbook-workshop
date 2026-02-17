@@ -8,10 +8,20 @@ Here is the step-by-step process to set this up correctly for APA citations.
 ## 1. Prepare Your Repository
 Before creating the DOI, add a `CITATION.cff` file to your repository. This file tells citation managers (like Zotero) and GitHub exactly how to format the citation.
 Create a file named `CITATION.cff` in your root/base directory, meaning the lowest level of your folder structure:
-img base-directory
 
-Add the following, and replace the placeholder values with your name, the url to your repo and so on. If you already have an Orcid ID, you can add the link, as well. Otherwise you can either leave the “orcid” line as it is or quickly create one [here](https://orcid.org/). I highly encourage you to do so, as this will provide you with a unique, permanent ID that ensures you can credit your materials and distinguishes your work from anyone else with a similar name. 
+img base-directory add file
 
+
+Add the following, and replace the placeholder values with your name, the url to your repo and so on. If you already have an Orcid ID, you can add the link, as well. 
+
+Note: OrcID
+
+Otherwise you can either leave the “orcid” line as it is or quickly create one [here](https://orcid.org/). I highly encourage you to do so, as this will provide you with a unique, permanent ID that ensures you can credit your materials and distinguishes your work from anyone else with a similar name. 
+
+img ORCID
+
+Paste this:
+```
 cff-version: 1.2.0
 message: "If you want to use these materials, please cite them as below."
 authors:
@@ -22,6 +32,8 @@ title: "Title of Your Website/Project"
 version: 1.0.0
 date-released: 2026-02-01
 url: "https://yourusername.github.io/your-repo"
+
+```
 
 ---
 
