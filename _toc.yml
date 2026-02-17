@@ -17,7 +17,6 @@ parts:
 - caption: 2. Creating your own OER
   chapters:
   - file: content/4_additional/quick_tutorial_ws
-  - file: content/1_github/template
   - file: content/3_create/intro
     sections:
     - file: content/3_create/markdown
