@@ -7,7 +7,6 @@ There are two ways to go about this: either you invite someone as a collaborator
 
 ## 1. Adding Collaborators.
 
-1.1
 
 First, please, find a partner and invite each other as collaborators to your respective repos. This will allow you to have access to each other's repo and, given a specific role, you may modify the contents or structure of the repository.
 You can do so by navigating to the settings -> collaborators page of your repo and simply selecting *Add people*.
@@ -15,9 +14,13 @@ You can do so by navigating to the settings -> collaborators page of your repo a
 
 img collabs
 
+![Image](../static/collaborators.png)
+
+
 Search for people via their GitHub Username, Email, etc., and click *Add to repository*.
 
-img search_people
+![Image showing the GitHub settings where collaborators are added](../static/search_people.png)
+
 
 Now simply wait for them to accept your invite. 
 
