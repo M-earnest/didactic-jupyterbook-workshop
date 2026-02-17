@@ -426,7 +426,13 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives 📍</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-of-github-pages">Limitations of GitHub Pages</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-mybinder">Enter MyBinder</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">Google Colab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-personal-session-link">How to Create a “Personal Session” Link</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-hosting-on-github-for-colab">Step-by-Step: Hosting on GitHub for Colab</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-the-open-in-colab-badge">Adding the “Open in Colab” Badge</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mybinder-turning-notebooks-into-web-apps">MyBinder: Turning Notebooks into Web Apps</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-mybinder-link">How to Create a MyBinder Link</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-mybinder-environment">1. Setting Up the MyBinder Environment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-config-yml">2. Changing the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></a></li>
@@ -449,7 +455,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-do-it">How to Do It</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-section">Next section:</a></li>
 </ul>
             </nav>
         </div>
@@ -483,12 +488,62 @@ document.write(`
 <li><p><strong>Dynamic visualizations</strong> won’t work natively.</p></li>
 <li><p><strong>Interactive widgets</strong> and real-time feedback elements will appear static.</p></li>
 </ul>
-<p>This limitation can be a barrier to effective engagement, especially when learners need to test code, manipulate inputs, or receive personalized feedback based on their answers.</p>
+<p>This limitation can be a barrier to effective engagement, especially when learners need to test code, manipulate inputs, or receive personalized feedback based on their answers. There are different ways to solve this issue. We will present two approaches, each with a different focus.</p>
 </section>
-<section id="enter-mybinder">
-<h2>Enter MyBinder<a class="headerlink" href="#enter-mybinder" title="Permalink to this heading">#</a></h2>
-<p>To overcome the limitations of static sites, <strong>MyBinder</strong> provides an elegant solution.</p>
-<p>MyBinder is a free and open-source service that runs on Jupyter Notebooks <strong>without requiring any local installation</strong>. It allows users to create and share <strong>live</strong> versions of notebooks for delivering interactive learning activities. You can configure MyBinder with a specific environment, datasets, and code to ensure reproducibility. You can <strong>create and share a link</strong> that launches a ready-to-use version of your content.</p>
+<section id="google-colab">
+<h2>Google Colab<a class="headerlink" href="#google-colab" title="Permalink to this heading">#</a></h2>
+<p><strong>Google Colab</strong> is great for hosting interactive Jupyter notebooks (remember those?). Jupyter notebooks can contain a mixture of code, narrative text, and media elements (via markdown). Google Collab helps us host and share these materials with our participants.</p>
+<p>The service is actually quiet fast at launch and provides a stable, cloud-based computation environment, so that each of your participants, independent of their hardware, can take part in your interactive lessons.</p>
+<p>When you link a notebook stored in your GitHub repository to Google Colab, every participant who clicks the link starts their own <strong>personal, fresh session</strong>. Any changes they make or code they run stays in their temporary environment. If they want to keep their work, they can download a copy or save their work to their own Google Drive, leaving your original GitHub file untouched.</p>
+<section id="how-to-create-a-personal-session-link">
+<h3>How to Create a “Personal Session” Link<a class="headerlink" href="#how-to-create-a-personal-session-link" title="Permalink to this heading">#</a></h3>
+<p>You can build a direct launch link by combining the Colab base URL with your GitHub file path.</p>
+<p><strong>The URL structure is:</strong>
+<code class="docutils literal notranslate"><span class="pre">https://colab.research.google.com/github/&lt;YOUR_USERNAME&gt;/&lt;YOUR_REPO&gt;/blob/&lt;BRANCH&gt;/&lt;PATH_TO_FILE&gt;.ipynb</span></code></p>
+</section>
+<section id="step-by-step-hosting-on-github-for-colab">
+<h3>Step-by-Step: Hosting on GitHub for Colab<a class="headerlink" href="#step-by-step-hosting-on-github-for-colab" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Push your notebook</strong> to your GitHub repository (e.g., inside the <code class="docutils literal notranslate"><span class="pre">interactives/</span></code> folder) via <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Upload</span></code>.</p></li>
+<li><p><strong>Construct the Link</strong>:</p>
+<ul class="simple">
+<li><p>Locate your file on GitHub: <code class="docutils literal notranslate"><span class="pre">https://github.com/user/repo/blob/main/interactives/quiz_1.ipynb</span></code></p></li>
+<li><p>Replace <code class="docutils literal notranslate"><span class="pre">github.com</span></code> with <code class="docutils literal notranslate"><span class="pre">colab.research.google.com/github</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<p>Instead of manually editing strings, you can also use the official interface to generate your link:</p>
+<ol class="arabic simple">
+<li><p><strong>Go to:</strong> <a class="reference external" href="https://colab.research.google.com/github/">https://colab.research.google.com/github/</a></p></li>
+<li><p><strong>Paste your GitHub URL:</strong> In the search bar, paste the link to your repository or the specific notebook file.</p></li>
+</ol>
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/collab_link.png"><img alt="MyBinder Set-Up" src="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/collab_link.png" style="width: 1000px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p><strong>Select your file:</strong> Colab will show a list of <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files in that repo. Click the one you want.</p></li>
+</ol>
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/collab_notebook_view.png"><img alt="MyBinder Set-Up" src="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/collab_notebook_view.png" style="width: 1000px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p><strong>Copy the result:</strong> Once the notebook opens in Colab, simply <strong>copy the URL from your browser’s address bar</strong>.</p></li>
+</ol>
+<p>That URL is your “Fresh Session” link. Anyone you give it to will get their own independent copy</p>
+<p><strong>Example:</strong>
+<a class="reference external" href="https://colab.research.google.com/github/M-earnest/didactic-jupyterbook-workshop/blob/main/interactives/quiz_test_collab.ipynb">Click here to launch the quiz on Google Colab</a></p>
+</section>
+<section id="adding-the-open-in-colab-badge">
+<h3>Adding the “Open in Colab” Badge<a class="headerlink" href="#adding-the-open-in-colab-badge" title="Permalink to this heading">#</a></h3>
+<p>To make the link stand out in your Jupyter Book, use the official Colab badge markdown:</p>
+<p>Code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/your_repository/blob/main/interactives/multiple_choice_task.ipynb)
+</pre></div>
+</div>
+<p>Result:
+<a class="reference external" href="https://colab.research.google.com/github/your_username/your_repository/blob/main/interactives/multiple_choice_task.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+</section>
+</section>
+<section id="mybinder-turning-notebooks-into-web-apps">
+<h2>MyBinder: Turning Notebooks into Web Apps<a class="headerlink" href="#mybinder-turning-notebooks-into-web-apps" title="Permalink to this heading">#</a></h2>
+<p>While <strong>Google Colab</strong> is excellent for sharing a standard notebook environment where users can see and edit code, you might sometimes want a cleaner, “app-like” interface that hides the code and focuses entirely on the interactive elements.</p>
+<p>This is where <strong>MyBinder</strong> excels. It allows you to transform your Jupyter Notebooks into live, standalone webpages, essentially launching notebooks directly into a “rendered” mode, providing a more polished experience for non-technical learners. By combining MyBinder and <a class="reference external" href="https://voila.readthedocs.io/en/stable/deploy.html">Voilà</a>, you can turn a notebook into a dashboard or quiz where the user only sees the questions and feedback, not the Python code behind them. You can configure MyBinder with a specific environment, datasets, and code to ensure reproducibility. You can <strong>create and share a link</strong> that launches a ready-to-use version of your content.</p>
 <p>MyBinder enables:</p>
 <ul class="simple">
 <li><p><strong>Progress check</strong> with short formative questions placed throughout the content</p></li>
@@ -1331,10 +1386,6 @@ You want <strong>everything in one place</strong> — the explanations, the visu
 </div>
 </section>
 </section>
-<section id="next-section">
-<h2>Next section:<a class="headerlink" href="#next-section" title="Permalink to this heading">#</a></h2>
-<p>In the next section, you will learn how to integrate citations and bibliographies.</p>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1402,7 +1453,13 @@ You want <strong>everything in one place</strong> — the explanations, the visu
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives 📍</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-of-github-pages">Limitations of GitHub Pages</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-mybinder">Enter MyBinder</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-colab">Google Colab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-personal-session-link">How to Create a “Personal Session” Link</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-hosting-on-github-for-colab">Step-by-Step: Hosting on GitHub for Colab</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-the-open-in-colab-badge">Adding the “Open in Colab” Badge</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mybinder-turning-notebooks-into-web-apps">MyBinder: Turning Notebooks into Web Apps</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-mybinder-link">How to Create a MyBinder Link</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-mybinder-environment">1. Setting Up the MyBinder Environment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-config-yml">2. Changing the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></a></li>
@@ -1425,7 +1482,6 @@ You want <strong>everything in one place</strong> — the explanations, the visu
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-do-it">How to Do It</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-section">Next section:</a></li>
 </ul>
   </nav></div>
 
