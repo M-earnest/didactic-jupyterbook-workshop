@@ -60,8 +60,6 @@ Using public backends:
 
 Using uploaded files:
   
-
-
 <audio controls>
   <source src="https://github.com/M-earnest/didactic-jupyterbook-workshop/raw/refs/heads/main/static/beethoven_demo.wav" type="audio/wav">
   Your browser does not support the audio element.
@@ -71,7 +69,15 @@ Using uploaded files:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9YuNGB3vNOw?si=dPCD8xeLaUuimvYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Integration of presentations** 
-<iframe src="https://docs.google.com/presentation/d/1jZHqMEj0IXVMGVWH-oasVrmvfTdMn1ODyXeblWUHWCk/edit?slide=id.g23798f94756_0_73#slide=id.g23798f94756_0_73" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe 
+  src="https://docs.google.com/presentation/d/1jZHqMEj0IXVMGVWH-oasVrmvfTdMn1ODyXeblWUHWCk/embed?start=false&loop=false&delayms=3000" 
+  frameborder="0" 
+  width="960" 
+  height="569" 
+  allowfullscreen="true" 
+  mozallowfullscreen="true" 
+  webkitallowfullscreen="true">
+</iframe>
 
 
 ````
