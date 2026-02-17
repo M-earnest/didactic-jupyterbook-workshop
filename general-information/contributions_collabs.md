@@ -7,7 +7,6 @@ There are two ways to go about this: either you invite someone as a collaborator
 
 ## 1. Adding Collaborators.
 
-
 First, please, find a partner and invite each other as collaborators to your respective repos. This will allow you to have access to each other's repo and, given a specific role, you may modify the contents or structure of the repository.
 You can do so by navigating to the settings -> collaborators page of your repo and simply selecting *Add people*.
 
@@ -19,44 +18,34 @@ img collabs
 
 Search for people via their GitHub Username, Email, etc., and click *Add to repository*.
 
-![Image showing the GitHub settings where collaborators are added](../static/search_people.png)
+![Image](../static/search_people.png)
 
 
 Now simply wait for them to accept your invite. 
 
-1.2
 
-Once they have done so, you can click the pencil icon net to their name and assigne roles/rights. In general only the owner of the repo will have all possible rights, e.g. the right to delete the repository. To allow others to create and modify the content of your repo, you will have to give them "write" access. 
-Here are some common roles/rights associated with certain collaborative positions. 
+#### Working with collaborators
 
+As collaborators on private repositories have full access to the project and default have write access, you can simply select one of the files and start making changes or create new files for your contributions. 
 
-| Role | Best For... | Can Push Code? | Can Merge PRs? | Can Delete Repo? |
-| :--- | :--- | :--- | :--- | :--- |
-| **Read** | Non-code contributors, auditors | No | No | No |
-| **Triage** | Project managers, issue triagers | No | No | No |
-| **Write** | Standard developers | **Yes** | **Yes** | No |
-| **Maintain** | Project leads | **Yes** | **Yes** | No |
-| **Admin** | Owners/Co-founders | **Yes** | **Yes** | **Yes** |
-
-
-1.3 Working with collaboratos
-
-As collaboratos have full access to the repository and should have write access by now, you can simply select one of the files and start making changes or create new files for your contributions. 
 Navigate to the "general information" folder of your partners repository. Click "Add file", give your contribution a name and make sure it ends with `.md` (so that GitHub knows we want a markdown formatted file). 
 
-img create_file
+![Image](../static/create_file.png)
 
 
 Now simply add a header, do so by declaring the first line of the document as the title via the use of a single hash, e.g. your title could be
 
-# Notes and tricks
+```
+# Notes and things
+```
 
-Note that this will be rendered as the title of the newly created webpage in the table of contents on your rendered website. To actually make this visible we are still missing one final step, though. 
-So add some notes or a friendly message to your partner and click "commoit changes" in the upper right hand corner. 
+Note that everything behind the hashtag will be rendered as the title of the newly created webpage in the table of contents on your rendered website. To make these changes visible, we are still missing one final step, though. 
 
-In the commit view add an informative title and describe the changes you have made in as much detail as necessary.
+So add some notes or a friendly message to your partner and click "commit changes" in the upper right hand corner. 
 
-img commit_file
+In the commit view, add an informative title and describe the changes you have made in as much detail as necessary.
+
+![Image](../static/commit_changes.png)
 
 To make the newly created content appear on the website, we have to add the new file to our `toc.yml`. Jump back into the [Creating OER tutorial](https://diler-digitell.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html) to recall how to do this.
 
@@ -65,26 +54,37 @@ Once you have committed the changes to the `toc.yml`, you can check the actions 
 So congratulations, you now know how to leverage the central hub of the global software development economy to manage your own projects! You can now effectively declare that you are using the "gold standard" frameworks of the tech industry for collaborative coding and software project management.
 
 
-1.4 A Safety Net: Working with Branches
+#### Working with Branches: Ordered collabs
 
-While editing files directly on the main page works, it comes with a risk. Imagine if you and your partner both try to rewrite the introduction chapter at the exact same time. Who wins? Usually, this will result in one of two things, either the last person to click "Commit" overwrites the other person's work, or GitHub declares a "conflict".
+While editing files directly on the main page works, it comes with a risk. Imagine if you and your partner both try to rewrite the introduction chapter at the exact same time. Who wins? Usually, this will result in one of two things, either the last person to click "Commit" overwrites the other person's work, or GitHub declares a "merge conflict". Meaning that you will be asked to manually decide which version of the file you will want to keep.
 
 To avoid this chaos, developers use `Branches`.
 
 Think of the `main` branch (the one you are working on now, check screenshot) as the "published" version of your book. It should always be clean and error-free. 
 
+![Image](../static/main_branch.png)
 
-When you want to try a new idea, the standard should be to create a new "branch", which is like creating your own copy of the project to a separate room to scribble on it safely. If you mess up, you can just throw the copy away without hurting or in any way changing the original files. If you like it, you "merge" it back in.
+When you want to try a new idea, the standard should be to create a new "branch", i.e. making your own copy of the project at its current state and taking it to a separate room to implement some of your ideas. If you mess up or break something, you can just throw the copy away without changing the original files. If you like it, you "merge" it back in.
 
-Here is how to do it in the browser:
+Let's try this.
 
-    Create/Select a Branch: On the main page of the repository, look for the dropdown button on the left that says main. Click it and type a new name for your workspace (e.g., draft-chapter-1). Click Create branch....
+Create a new Branch: On the main page of the repository, look for the dropdown button on the left that says main. Click it and type a new name for your workspace (e.g., draft-chapter-1). Click Create branch....
 
-    img create_branch
+![Image](../static/view_branch.png)
 
-    Make Changes: You are now working in your own parallel universe! You can edit files, delete things, or add new notes exactly as we did in step 1.3. None of this affects the main view yet.
 
-    The Pull Request (Merging): Once you are happy with your edits, you need to tell your partner (and the system) to pull your changes into the main version.
+Now make some changes. You are now working in your own parallel universe! You can edit files, delete things, or add new notes exactly as we did previously. None of this affects the main view yet. You can check this by switching between branches. Simply click on the branch dropdown again and select the branch you want to view. If you have e.g. created a new file in your new draft-chapter-1 branch, the file should only appear on this branch, but not in your main branch.
+
+
+#### The Pull Request: Merging branches
+
+Once you are done with your edits, you need to tell your partner (and the GH) to pull your changes into the main version. After making changes to your branch, a new pop-up will appear at the top of yyur repo. 
+
+![Image](../static/pull_request_button.png)
+
+Click the 
+
+
 
         Click the Pull Requests tab at the top.
 
