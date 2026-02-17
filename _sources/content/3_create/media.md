@@ -163,7 +163,6 @@ When using files hosted on GitHub, you cannot use the standard browser URL. You 
 ```
 <audio controls>
   <source src="https://github.com/M-earnest/didactic-jupyterbook-workshop/raw/refs/heads/main/static/beethoven_demo.wav" type="audio/wav">
-  Your browser does not support the audio element.
 </audio>
 ```
 
