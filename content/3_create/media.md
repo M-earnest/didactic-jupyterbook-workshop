@@ -155,7 +155,11 @@ Result:
 ### Using uploaded files
 For audio files that you have uploaded directly to your repository (e.g., in the `static` folder), use the `<audio>` tag to generate a native player.
 
-**Example: Hosted .wav file**
+```{note}
+When using files hosted on GitHub, you cannot use the standard browser URL. You must locate the file in your browser and copy the link to the **Download** button (or add `?raw=true` to the end of the file URL) to ensure the player can actually fetch the raw audio data.
+```
+
+
 ```
 <audio controls>
   <source src="https://github.com/M-earnest/didactic-jupyterbook-workshop/raw/refs/heads/main/static/beethoven_demo.wav" type="audio/wav">
