@@ -1,6 +1,12 @@
 ![logo](static/logo.png)
 
+
+
 # What's in this repository?
+
+
+#### adedd some text
+
 
 This repository contains all information needed for the group session on “XXX" on how to create interactive content with Jupyter Books. It's adapted from this online tutorial: https://github.com/DiLER-Digitell/tutorial_jupyter_books
 
