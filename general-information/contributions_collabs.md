@@ -41,7 +41,7 @@ Note that everything behind the hashtag will be rendered as the title of the new
 
 In the commit view, add an informative title and describe the changes you have made in as much detail as necessary.
 
-![Image](../static/committing.png)
+![Image](../static/comitting.png)
 
 To make the newly created content appear on the website, we have to add the new file to our `toc.yml`. Jump back into the [Creating OER tutorial](https://diler-digitell.github.io/didactic-jupyterbook-workshop/content/4_additional/quick_tutorial_ws.html) to recall how to do this.
 
