@@ -889,11 +889,11 @@ display(questions_box, buttons_box, feedback_output)
 
 ### __Step 3:__ Create the MyBinder Link
 
-1. Visit __MyBinder__ (https://mybinder.org)
+1. Go to [MyBinder](https://mybinder.org)
 2. Fill in the following:
     * GitHub repository: `https://github.com/your_user_name/your_repository`
     * Git ref (branch, tag, or commit): `main`
-    * File to open (in JupyterLab): `voila/render/interactives/multiple_choice_task.ipynb`
+    * File to open (in JupyterLab): `voila/render/interactives/MCQ_feedback.ipynb` 
     * Make sure to switch from `File` to `URL`
     * Click __Launch__ and test your quiz.
 
@@ -908,7 +908,7 @@ display(questions_box, buttons_box, feedback_output)
 2. Paste it into your course content.
 __Example:__
 ```markdown
-[Click here to launch the quiz on Binder](https://mybinder.org/v2/gh/your_username/your_repository/main/?urlpath=voila%2Frender%2Finteractives%2Fmultiple_choice_task.ipynb)
+[Click here to launch the quiz on Binder](https://mybinder.org/v2/gh/M-earnest/didactic-jupyterbook-workshop/HEAD?urlpath=voila%2Frender%2Finteractives%2FMCQ_feedback.ipynb)
 ```
 
 ### __Step 5:__ Add Required Packages
@@ -985,6 +985,17 @@ To create a navigation menu for your participants, **paste the Markdown block be
 - [Interactive Lesson 2](https://mybinder.org/v2/gh/your_user_name/yourCourse/main/?urlpath=voila%2Frender%2Finteractives%2Finteractive_lesson_2.ipynb)
 - [Interactive Lesson 3](https://mybinder.org/v2/gh/your_user_name/yourCourse/main/?urlpath=voila%2Frender%2Finteractives%2Finteractive_lesson_3.ipynb)
 ```
+
+Result:
+
+**Course Dashboard**
+
+- [Interactive Lesson 1](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-vh69jda2/voila/render/interactives/likert_feedback.ipynb?token=fw2weHheQ8O_fKTV7_gu8g)
+- [Interactive Lesson 2](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-pa7p6d1q/voila/render/interactives/MCQ_feedback.ipynb?token=oVQgz0PgSN2AHHpwnwicow)
+- [Interactive Lesson 3](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-5jc36rwc/voila/render//interactives/visualSearch.ipynb?token=OjirzmXOQIqJEkNJAIl70w)
+
+
+
 
 
 
