@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+
+message: "If you want to use these materials, please cite them as below."
+authors:
+- family-names: "Ernst"
+  given-names: "Michael"
+  orcid: "https://orcid.org/0009-0005-5956-5203" 
+title: "Creating Open Eductaional Resources for Higher Eductaion: DiLER; DigiTeLL"
+version: 1.0.0
+date-released: 2026-02-01
+url: "github.com/M-earnest/didactic-jupyterbook-workshop"
