@@ -16,7 +16,7 @@ p + ol {
 
 # Didactic Aspects
 
-Now that we provided a general overview on OER and have discussed why traditional learning platforms might limit the open distribution of educational resources, we will next discuss how some of the didactic advantages of our framework.
+Now that we provided a general overview on OER and have discussed why traditional learning platforms might limit the open distribution of educational resources, we will next discuss some of the didactic advantages of our framework.
 
 ````{card} 
 **Didactic challenges**
