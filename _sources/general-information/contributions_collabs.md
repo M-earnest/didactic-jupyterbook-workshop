@@ -96,7 +96,7 @@ Click the
 
 This opens a discussion thread where your partner can review your notes, leave comments, and finally click the Merge button to officially add your work to the project. This review process is essentially the heart of collaborative coding and allows you to have full control over what happens to your course.
 
-2. Outside collaborators and Independent contributions: Forking & Pull Requests
+### 2. Outside collaborators and Independent contributions: Forking & Pull Requests
 
 What if you want to, e.g., contribute to a massive open-source textbook where you don't know the owners personally? Or you want to invite help from someone outside your core team, e.g., a student from another university or a subject matter expert, without giving them full "Write" access to your repository. Giving every single contributor direct access is risky as they could accidentally delete files, push unfinished drafts to your main branch, or create merge conflicts.
 
