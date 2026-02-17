@@ -69,11 +69,11 @@ To make the link stand out in your Jupyter Book, use the official Colab badge ma
 
 Code:
 ```
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/your_repository/blob/main/interactives/multiple_choice_task.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/M-earnest/didactic-jupyterbook-workshop/blob/main/interactives/quiz_test_collab.ipynb)
 ```
 
 Result:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your_username/your_repository/blob/main/interactives/multiple_choice_task.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/M-earnest/didactic-jupyterbook-workshop/blob/main/interactives/quiz_test_collab.ipynb)
 
 
 
@@ -913,13 +913,13 @@ __Example:__
 
 ### __Step 5:__ Add Required Packages
 
-Go to your `requirements.txt` file in your repository and add the following lines:
+To ensure MyBinder can actually run our notebooks, we have to install the necessary packages. This is simply done by locating the `requirements.txt` file in your repository and addinf the following lines:
 
 ```markdown
 voila
 ipywidgets
 ```
-This ensures MyBinder installs everything needed to run your interactive quiz.
+
 
 ***
 
@@ -960,7 +960,23 @@ Use a single Jupyter Notebook that:
 
 3. Add the file to your `interactives` folder.
 
+
+
 4. Launch it using __MyBinder__ like this:
+
+### How to Use the Dashboard Code
+
+To create a navigation menu for your participants, **paste the Markdown block below into any `.md` file** in your project where you want the menu to appear (for example, at the end of a chapter or on a dedicated "Activities" page).
+
+#### What this does:
+* **Creates a Heading:** It generates a section titled `Course Dashboard`.
+* **Generates a Menu:** It creates a bulleted list of clickable links.
+* **Launches Sessions:** Each link acts as a "Launch Trigger" that sends a participant to their own **isolated, fresh session** (using the Voilà interface) so they can interact with the notebook without seeing the underlying code.
+
+---
+
+**Paste this into your Markdown file:**
+
 
 ```markdown
 # Course Dashboard
@@ -969,6 +985,7 @@ Use a single Jupyter Notebook that:
 - [Interactive Lesson 2](https://mybinder.org/v2/gh/your_user_name/yourCourse/main/?urlpath=voila%2Frender%2Finteractives%2Finteractive_lesson_2.ipynb)
 - [Interactive Lesson 3](https://mybinder.org/v2/gh/your_user_name/yourCourse/main/?urlpath=voila%2Frender%2Finteractives%2Finteractive_lesson_3.ipynb)
 ```
+
 
 
 
