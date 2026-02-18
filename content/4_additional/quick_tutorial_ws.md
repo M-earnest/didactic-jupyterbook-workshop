@@ -246,15 +246,15 @@ This is due to the way templates are handled internally by GitHub. If we jump ov
 
 If we now correct the permissions and rerun our workflow, the error will disappear, and the website ultimately build. Do the following:
 
-1. Click on "Settings" in the top tab.
+1. Click on `settings` in the top tab.
 
 ![Image of the tab where the word "Settings" is located on the far right](../../static/settings.png)
 
-2. Click on "Action" and then "General" under "Code and automation" on the left side.
+2. Click on `Action -> General` under `Code and automation` on the left side.
 
 ![Image of the menu on the left side.](../../static/actions-general.png)
 
-3. At the bottom of the page, under "Workflow permissions," select the option "Read and write permissions" and allow Github Actions to create and approve pull requests. Then, click on save.
+3. At the bottom of the page, under `Workflow permissions`, select the option `Read and write permissions` and `allow Github Actions to create and approve pull requests`. Then, click on `save`.
  
 ![Image of the workflow permissions.](../../static/workflow_permissions.png)
 
