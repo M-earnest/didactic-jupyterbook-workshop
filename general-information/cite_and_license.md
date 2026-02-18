@@ -46,8 +46,16 @@ Add the following, and replace the placeholder values with your name, the url to
 > [!NOTE]
 > Otherwise, leave the “orcid” line as it is or quickly create one [here](https://orcid.org/). I highly encourage you to do so, as this will provide you with a unique, permanent ID that ensures you can credit your materials and distinguishes your work from anyone else with a similar name.
 
-![CFF file](../static/orcid_pic.png)
 
+
+```{figure} ../static/orcid_pic.png
+---
+width: 200px
+align: center
+name: cff-file-figure
+---
+OrcID
+```
 
 Paste this:
 ```
@@ -71,23 +79,45 @@ url: "https://yourusername.github.io/your-repo"
 Go to Zenodo.org and log in using your GitHub account.
 Navigate to the GitHub Settings area (dropdown menu top right > GitHub).
 
-![CFF file](../static/zenodo_git.png)
+
+
+```{figure} ../static/zenodo_git.png
+---
+width: 200px
+align: center
+name: cff-file-figure
+---
+Linking GH and Zenodo.
+```
 
 You will see a list of your repositories. Flip the switch to ON for the repository you want to be citable.
 
-![CFF file](../static/zenodo_repos.png)
+
+```{figure} ../static/zenodo_repos.png
+---
+width: 200px
+align: center
+name: cff-file-figure
+---
+Your GitHub repos on Zenodo.
+```
 
   
 ## 4. Mint the DOI (Create a Release)
 Zenodo does not issue the DOI until you make a formal "Release" on GitHub. Go back to your repository on GitHub.
 *Click Releases (usually on the right sidebar) and create a `new release`.*
 
-![CFF file](../static/releases_view.png)
-
-
 Create a `tag` (e.g., v1.0.0), add a `title`, and click `Publish Release`. Zenodo will now automatically archive a snapshot of your code and generate a DOI.
 
-![CFF file](../static/create_release.png)
+```{figure} ../static/create_release.png
+---
+width: 200px
+align: center
+name: cff-file-figure
+---
+Releasing v1.0.0.
+```
+
 
 ## 5. APA Citation Format
 Once the process is complete, you can provide the following APA citation on your website:
