@@ -45,7 +45,7 @@ You will also find some additional information under the section resources. on h
 | **10:15 – 11:30** | Introduction; Chapter 1: Open Educational Resources; Begin Chapter 2: Creating OER |
 | **11:30 – 12:15** | Lunch Break |
 | **12:15 – 13:00** | Chapter 2: Creating OER; Demo: Creating Interactive Content |
-| **13:10 – 14:00** | Developing your own course concept |
+| **13:10 – 14:00** | Developing your own course concept; Wrap-up & Feedback |
 
 
 ## How/why did we get here?
