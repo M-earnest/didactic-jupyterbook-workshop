@@ -230,7 +230,8 @@ This essentially does the same as the fork, with a few differences.
 ![Image ](../../static/template_settings.png)
 
 
-So far, so good. We have successfully copied the contents and created a new repository. If you head over to the actions section, you will see that although you have not enabled action workflows like we did previously, but a process seems to already be running. Given some time, this process will fail and produce the following error. 
+So far, so good. You should see that we have successfully copied the contents and created a new repository. If you head over to the actions section, you will see that although you have not enabled action workflows like we did previously, but a process seems to already be running. Given some time, this process will fail and produce the following error. 
+
 
 
 ![Image ](../../static/failed_actions.png)
@@ -239,7 +240,7 @@ So far, so good. We have successfully copied the contents and created a new repo
 Our `deploy_book` workflow appears to have failed with the error:
 `Action failed with "The process '/usr/bin/git' failed with exit code 128"`. 
 
-This is due to the way templates are handled internally by GitHub. If we jump over to the settings tab and select "actions" -> "general", you will find that the template was crated with limited permissions, making it impossible for the gh-pages workflow to write to the repository. Let's correct this and see if this resolves our error.
+This is due to the way templates are handled internally by GitHub. If we jump over to the `settings` tab and select `actions -> general`, you will find that the template was created with limited permissions, making it impossible for the gh-pages workflow to write to the repository. Let's correct this and see if this resolves our error.
 
 ![Image ](../../static/limited_perms.png)
 

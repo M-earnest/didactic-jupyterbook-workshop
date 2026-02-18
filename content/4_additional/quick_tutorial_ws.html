@@ -621,11 +621,11 @@ A workflow in GitHub is an automated process that runs a series of steps in resp
 This essentially does the same as the fork, with a few differences.</p>
 <p><img alt="Image " src="../../_images/use_template.png" /></p>
 <p><img alt="Image " src="../../_images/template_settings.png" /></p>
-<p>So far, so good. We have successfully copied the contents and created a new repository. If you head over to the actions section, you will see that although you have not enabled action workflows like we did previously, but a process seems to already be running. Given some time, this process will fail and produce the following error.</p>
+<p>So far, so good. You should see that we have successfully copied the contents and created a new repository. If you head over to the actions section, you will see that although you have not enabled action workflows like we did previously, but a process seems to already be running. Given some time, this process will fail and produce the following error.</p>
 <p><img alt="Image " src="../../_images/failed_actions.png" /></p>
 <p>Our <code class="docutils literal notranslate"><span class="pre">deploy_book</span></code> workflow appears to have failed with the error:
 <code class="docutils literal notranslate"><span class="pre">Action</span> <span class="pre">failed</span> <span class="pre">with</span> <span class="pre">&quot;The</span> <span class="pre">process</span> <span class="pre">'/usr/bin/git'</span> <span class="pre">failed</span> <span class="pre">with</span> <span class="pre">exit</span> <span class="pre">code</span> <span class="pre">128&quot;</span></code>.</p>
-<p>This is due to the way templates are handled internally by GitHub. If we jump over to the settings tab and select “actions” -&gt; “general”, you will find that the template was crated with limited permissions, making it impossible for the gh-pages workflow to write to the repository. Let’s correct this and see if this resolves our error.</p>
+<p>This is due to the way templates are handled internally by GitHub. If we jump over to the <code class="docutils literal notranslate"><span class="pre">settings</span></code> tab and select <code class="docutils literal notranslate"><span class="pre">actions</span> <span class="pre">-&gt;</span> <span class="pre">general</span></code>, you will find that the template was created with limited permissions, making it impossible for the gh-pages workflow to write to the repository. Let’s correct this and see if this resolves our error.</p>
 <p><img alt="Image " src="../../_images/limited_perms.png" /></p>
 <p>If we now correct the permissions and rerun our workflow, the error will disappear, and the website ultimately build. Do the following:</p>
 <ol class="arabic simple">
