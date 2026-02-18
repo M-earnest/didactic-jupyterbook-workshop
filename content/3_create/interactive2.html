@@ -578,6 +578,12 @@ document.write(`
 <a class="reference internal image-reference" href="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/binder_ins_image.png"><img alt="MyBinder Set-Up" src="https://raw.githubusercontent.com/DiLER-Digitell/tutorial_jupyter_books/main/static/binder_ins_image.png" style="width: 1000px;" /></a>
 <p>Once it successfully launches, copy the <code class="docutils literal notranslate"><span class="pre">MyBinder</span> <span class="pre">URL</span></code> or <code class="docutils literal notranslate"><span class="pre">Binder</span> <span class="pre">badge</span> <span class="pre">code</span></code>.
 The badge is a clickable image that opens the environment when clicked. You can add this badge to your Jupyter Book’s README or any Markdown/Jupyter Notebook file to give readers direct access.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{warning} Dead Links!
+To prevent your interactive links from &quot;breaking&quot; or showing long build times every time you update your repository, follow these best practices:
+
+<span class="k">*</span><span class="w"> </span><span class="gs">**Use a Tag or Commit Hash:**</span> Instead of linking to the <span class="sb">`main`</span> branch, link to a specific <span class="gs">**Git Tag**</span> (find this by clicking the <span class="gs">**&quot;main&quot; branch dropdown**</span> on your GitHub repo and selecting the <span class="gs">**Tags**</span> tab) or a <span class="gs">**Commit Hash**</span> (found by clicking the <span class="gs">**&quot;Commits&quot;**</span> link above your file list and clicking the <span class="gs">**copy icon**</span> next to the 7-character code of your desired version). This ensures the link always points to a pre-built, cached image that launches instantly for your learners.
+</pre></div>
+</div>
 </section>
 <section id="changing-the-config-yml">
 <h4>2. Changing the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code><a class="headerlink" href="#changing-the-config-yml" title="Permalink to this heading">#</a></h4>
