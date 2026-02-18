@@ -113,7 +113,6 @@ Below is a step-by-step guide to setting up MyBinder — and why you may want to
 Once it successfully launches, copy the `MyBinder URL` or `Binder badge code`. 
 The badge is a clickable image that opens the environment when clicked. You can add this badge to your Jupyter Book’s README or any Markdown/Jupyter Notebook file to give readers direct access.
 
-```markdown
 ```{warning} Dead Links!
 To prevent your interactive links from "breaking" or showing long build times every time you update your repository, follow these best practices:
 
@@ -1011,6 +1010,7 @@ Unfortunately, it is hardly possibly to colletc respones using Gh-Pages, if you 
 
 - [Socisurvey](https://www.soscisurvey.de/en/index): To collect behavioral data, surveys
 - [Google Sheets](https://www.wikihow.com/Use-Google-Spreadsheet): For anonymous surveys, feedback etc.
+
 
 
 
