@@ -113,6 +113,13 @@ Below is a step-by-step guide to setting up MyBinder — and why you may want to
 Once it successfully launches, copy the `MyBinder URL` or `Binder badge code`. 
 The badge is a clickable image that opens the environment when clicked. You can add this badge to your Jupyter Book’s README or any Markdown/Jupyter Notebook file to give readers direct access.
 
+```markdown
+```{warning} Dead Links!
+To prevent your interactive links from "breaking" or showing long build times every time you update your repository, follow these best practices:
+
+* **Use a Tag or Commit Hash:** Instead of linking to the `main` branch, link to a specific **Git Tag** (find this by clicking the **"main" branch dropdown** on your GitHub repo and selecting the **Tags** tab) or a **Commit Hash** (found by clicking the **"Commits"** link above your file list and clicking the **copy icon** next to the 7-character code of your desired version). This ensures the link always points to a pre-built, cached image that launches instantly for your learners.
+```
+
 #### 2. Changing the `_config.yml`
 To make interactive buttons appear within Jupyter Book pages, modify the `config.yml` file found in the lecture folder by adding the following bit of code:
 
@@ -1004,6 +1011,7 @@ Unfortunately, it is hardly possibly to colletc respones using Gh-Pages, if you 
 
 - [Socisurvey](https://www.soscisurvey.de/en/index): To collect behavioral data, surveys
 - [Google Sheets](https://www.wikihow.com/Use-Google-Spreadsheet): For anonymous surveys, feedback etc.
+
 
 
 
