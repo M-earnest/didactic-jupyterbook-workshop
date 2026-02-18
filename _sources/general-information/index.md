@@ -40,6 +40,14 @@ Our final session, [Chapter 3. Wrap-Up](https://m-earnest.github.io/didactic-jup
 You will also find some additional information under the section resources. on how to create your course website, which provides more detail than the quick setup guide, along with additional resources for you to explore.
 
 
+| Time | Activity |
+| :--- | :--- |
+| **10:15 – 11:30** | Introduction; Chapter 1: Open Educational Resources; Begin Chapter 2: Creating OER |
+| **11:30 – 12:15** | Lunch Break |
+| **12:15 – 13:00** | Chapter 2: Creating OER; Demo: Creating Interactive Content |
+| **13:10 – 14:00** | Developing your own course concept |
+
+
 ## How/why did we get here?
 
 
@@ -57,6 +65,8 @@ We will also be providing a course template that will serve as a tool for our pr
 
 The contact information of the instructors is as follows:
 
+Main instructor:
+
 [Michael Ernst](https://github.com/M-earnest)
 
 - Office hours: upon request
@@ -65,8 +75,42 @@ The contact information of the instructors is as follows:
 
 ```{admonition} How do we address one another?
 :class: dropdown
-He/Him. When contacting me, please refrain from using honoraries and formal language, "Michael" or "you" is fine as long as the content is respectful, fair, and constructive (I aim for the same when I reply).
+He/Him. When contacting me, please refrain from using honorifics and formal language, "Michael" or "you" is fine as long as the content is respectful, fair, and constructive (I aim for the same when I reply).
 However, please let me know if you have a preferred way of interacting with other folks, including how you would like to be addressed, your pronouns, and the level of formality.
+```
+
+The team:
+
+[Lucie Binder](https://github.com/luciebinder)
+
+- E-mail: `binder@psych.uni-frankfurt.de`
+
+```{admonition} How do we address one another?
+:class: dropdown
+She/Her. When contacting me, please refrain from using honoraries and formal language, "Lucie" or "you" is fine as long as the content is respectful, fair, and constructive (I aim for the same when I reply).
+However, please let me know if you have a preferred way of interacting with other folks, including how you would like to be addressed, your pronouns, and the level of formality.
+```
+
+[Jannika Hollmann](https://github.com/JannikaHollmann)
+
+- Office hours: upon request
+- E-mail: `J.Hollmann@em.uni-frankfurt.de`
+- preferred mode of contact: vie e-mail
+
+```{admonition} How to address one another?
+:class: dropdown
+She/Her. If you want to reach out, skip the formalities and just use “Jannika” or “you”, as long as the content is respectful, fair, and constructive (I aim for the same when I reply). However, please let me know if you have a preferred way of interacting with other folks, including how you would like to be addressed, your pronouns, and the level of formality.
+```
+
+[Felix Körber](x)
+
+- Office hours: upon request
+- E-mail: `koerber@psych.uni-frankfurt.de`
+- preferred mode of contact: vie e-mail
+
+```{admonition} How to address one another?
+:class: dropdown
+He/Him. If you want to reach out, skip the formalities and just use “Felix” or “you”, as long as the content is respectful, fair, and constructive (I aim for the same when I reply). However, please let me know if you have a preferred way of interacting with other folks, including how you would like to be addressed, your pronouns, and the level of formality.
 ```
 
 
@@ -77,3 +121,5 @@ You can direct any questions to me via the email above or join our [DiLER Discor
 ----
 ## Acknowledgments
 This workshop was initially created by Dr. [Lucie Binder](https://github.com/luciebinder) and is based on the online course [Creating interactive content with Jupyter Books](https://diler-digitell.github.io/tutorial_jupyter_books/general-information/index.html) developed as part of [DigiTeLL](https://www.uni-frankfurt.de/106198465/Digital_Teaching_and_Learning_Lab___DigiTeLL) by the [DiLER](https://diler-digitell.github.io/intro.html) project. It was subsequently adapted and expanded to fit the Grade workshop format.
+
+
