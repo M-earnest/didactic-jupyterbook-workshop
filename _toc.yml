@@ -30,11 +30,7 @@ parts:
 - caption: 3. Wrap-Up
   chapters:
   - file: general-information/wrap-up  
-- caption: In-depth Tutorial 
-  chapters:
-  - file: content/2_host/host_website
-    sections:
-    - file: content/2_host/troubleshooting
+
 
 - caption: Additional Resources
   chapters:
