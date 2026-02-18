@@ -221,25 +221,49 @@ To explore what’s possible and learn how to further enhance your content, for 
 
 ## 7. Creating multiple courses with the "Use this template" functionality
 
-As briefly mentioned before, we can only maintain a single fork of an existing repo. Should you want to create more courses we have to use the template functionality provided by GitHub and enabled for our course repository.
-This essentially does the same as the fork with a few differences. 
+As briefly mentioned before, we can only maintain a `single fork` of an existing repo. Should you want to create more courses, we have to use the `template functionality` provided by GitHub and enabled for our course repository.
+This essentially does the same as the fork, with a few differences. 
 
-Img 1 -> select use this template
-Img 2 -> template creation settings
+![Image ](../../static/use_template.png)
 
-So far, so good. But if you head over to the actions section, you will see that although you have not enabled said workflows, that a process is already running and given some time will produce the following error. 
 
-img 3 -> actions failure
+![Image ](../../static/template_settings.png)
 
-This is due to the way templates are handled internally by GitHub. If we jump over to the settings tab and select "actions" -> "general" you will find that the template wase crated with limited permissions, making it impossible for the gh-pages workflow to write to the repository. 
 
-img 4 -> permissions
+So far, so good. We have successfully copied the contents and created a new repository. If you head over to the actions section, you will see that although you have not enabled action workflows like we did previously, but a process seems to already be running. Given some time, this process will fail and produce the following error. 
 
-If we now correct the permissions and rerun our workflow, the error will disappear, and the website ultimately build.
 
-img 5 - corrected perms
-img 6 - success workflow
-img 7 - built template website
+![Image ](../../static/failed_actions.png)
+
+
+Our `deploy_book` workflow appears to have failed with the error:
+`Action failed with "The process '/usr/bin/git' failed with exit code 128"`. 
+
+This is due to the way templates are handled internally by GitHub. If we jump over to the settings tab and select "actions" -> "general", you will find that the template was crated with limited permissions, making it impossible for the gh-pages workflow to write to the repository. Let's correct this and see if this resolves our error.
+
+![Image ](../../static/limited_perms.png)
+
+If we now correct the permissions and rerun our workflow, the error will disappear, and the website ultimately build. Do the following:
+
+1. Click on "Settings" in the top tab.
+
+![Image of the tab where the word "Settings" is located on the far right](../../static/settings.png)
+
+2. Click on "Action" and then "General" under "Code and automation" on the left side.
+
+![Image of the menu on the left side.](../../static/actions-general.png)
+
+3. At the bottom of the page, under "Workflow permissions," select the option "Read and write permissions" and allow Github Actions to create and approve pull requests. Then, click on save.
+ 
+![Image of the workflow permissions.](../../static/workflow_permissions.png)
+
+4. Make a change to one file (e.g., add a line to your `README.md`) to trigger the workflow.
+
+5. Click on "Action" in the top tab and check your workflow.
+6. As soon as the process is completed,  head over to “Settings” -> “Pages”.
+7. Ensure that "gh-pages" is selected (instead of "main") as the branch.
+8. 
+![Image of the settings under Branch.](../../static/gh-pages.png)
 
 ----
 
