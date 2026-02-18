@@ -78,6 +78,8 @@ Result:
 
 
 
+</br>
+
 ## MyBinder: Turning Notebooks into Web Apps
 
 While **Google Colab** is excellent for sharing a standard notebook environment where users can see and edit code, you might sometimes want a cleaner, "app-like" interface that hides the code and focuses entirely on the interactive elements. 
@@ -994,6 +996,14 @@ Result:
 - [Interactive Lesson 1](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-vh69jda2/voila/render/interactives/likert_feedback.ipynb?token=fw2weHheQ8O_fKTV7_gu8g)
 - [Interactive Lesson 2](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-pa7p6d1q/voila/render/interactives/MCQ_feedback.ipynb?token=oVQgz0PgSN2AHHpwnwicow)
 - [Interactive Lesson 3](https://hub.bids.mybinder.org/user/m-earnest-didac-erbook-workshop-5jc36rwc/voila/render//interactives/visualSearch.ipynb?token=OjirzmXOQIqJEkNJAIl70w)
+
+
+### Collecting Responses and outside services
+
+Unfortunately, it is hardly possibly to colletc respones using Gh-Pages, if you don't have the knowledge or time to set up your own backend. But you can, of course, always integrate links to outside sources, e.g. 
+
+- [Socisurvey](https://www.soscisurvey.de/en/index): To collect behavioral data, surveys
+- [Google Sheets](https://www.wikihow.com/Use-Google-Spreadsheet): For anonymous surveys, feedback etc.
 
 
 
