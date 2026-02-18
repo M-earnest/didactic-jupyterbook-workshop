@@ -3,9 +3,9 @@
 # Book settings
 # Users are expected to override these values in their own `_config.yml` file.
 # Learn more at https://jupyterbook.org/customize/config.html
-title                       : "Group session: Working collaborative with Jupyter Book"  # The title of the book. Will be placed in the left navbar.
-author                      : Lucie Binder, Jannika Hollmann, Michael Ernst, Nariman Utegaliyev based on the Gorella template by Peer Herholz, José C. García Alanis, Christoph Vogelbacher  # The author of the book
-copyright                   : "2025, BSD-3-Clause license"  # Copyright year to be placed in the footer
+title                       : "Creating OER for higher education with Jupyter Books"  # The title of the book. Will be placed in the left navbar.
+author                      : Michael Ernst, Lucie Binder, Jannika Hollmann, Nariman Utegaliyev based on the Gorella template by Peer Herholz, José C. García Alanis, Christoph Vogelbacher  # The author of the book
+copyright                   : "2026, BSD-3-Clause license"  # Copyright year to be placed in the footer
 #logo                        : "static/logo.png"  # A path to the book logo
 exclude_patterns            : []  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 
@@ -44,7 +44,7 @@ launch_buttons:
 # Information about where the book exists on the web
 # See also https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 repository:
-  url: https://github.com/DiLER-Digitell/tutorial_jupyter_books  # Online location of your book
+  url: https://github.com/M-earnest/didactic-jupyterbook-workshop  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
