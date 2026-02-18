@@ -431,15 +431,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-your-repository">1. Prepare Your Repository</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-github-to-zenodo">2. Connect GitHub to Zenodo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mint-the-doi-create-a-release">3. Mint the DOI (Create a Release)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-citation-format">4. APA Citation Format</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doi-badge">5. DOI Badge</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#licensing">6. Licensing</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#licensing">1. Licensing</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-license">The LICENSE</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-digital-object-identifiers-doi-with-zenodo">2. Creating Digital Object Identifiers (DOI) with Zenodo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-your-repository">2. Prepare Your Repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-github-to-zenodo">3. Connect GitHub to Zenodo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mint-the-doi-create-a-release">4. Mint the DOI (Create a Release)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-citation-format">5. APA Citation Format</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doi-badge">6. DOI Badge</a></li>
 </ul>
             </nav>
         </div>
@@ -453,12 +454,39 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="licenses-and-citations">
 <h1>Licenses and Citations<a class="headerlink" href="#licenses-and-citations" title="Permalink to this heading">#</a></h1>
-<p>To associate your newly created course materials and properly credit your work, you want to create a unique Digital Object Identifiers (DOI).
+<section id="licensing">
+<h2>1. Licensing<a class="headerlink" href="#licensing" title="Permalink to this heading">#</a></h2>
+<section id="the-license">
+<h3>The LICENSE<a class="headerlink" href="#the-license" title="Permalink to this heading">#</a></h3>
+<p>Now you want to additionally define what and who can use, reproduce, or adapt your materials. For this, we use specific Licenses (you can find the different iterations [here](link to shit))
+The course template already contains a BSD 3-Clause License. You’ll find the stipulations below. Feel free to modify the LICENSE file as needed, provided you comply with the terms outlined in our license.</p>
+<p><img alt="depicting the LICENSE of the course template" src="../static/license.png" /></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Redistribution</span> <span class="ow">and</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">binary</span> <span class="n">forms</span><span class="p">,</span> <span class="k">with</span> <span class="ow">or</span> <span class="n">without</span>
+<span class="n">modification</span><span class="p">,</span> <span class="n">are</span> <span class="n">permitted</span> <span class="n">provided</span> <span class="n">that</span> <span class="n">the</span> <span class="n">following</span> <span class="n">conditions</span> <span class="n">are</span> <span class="n">met</span><span class="p">:</span>
+
+<span class="o">*</span> <span class="n">Redistributions</span> <span class="n">of</span> <span class="n">source</span> <span class="n">code</span> <span class="n">must</span> <span class="n">retain</span> <span class="n">the</span> <span class="n">above</span> <span class="n">copyright</span> <span class="n">notice</span><span class="p">,</span> <span class="n">this</span>
+  <span class="nb">list</span> <span class="n">of</span> <span class="n">conditions</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">following</span> <span class="n">disclaimer</span><span class="o">.</span>
+
+<span class="o">*</span> <span class="n">Redistributions</span> <span class="ow">in</span> <span class="n">binary</span> <span class="n">form</span> <span class="n">must</span> <span class="n">reproduce</span> <span class="n">the</span> <span class="n">above</span> <span class="n">copyright</span> <span class="n">notice</span><span class="p">,</span>
+  <span class="n">this</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">conditions</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">following</span> <span class="n">disclaimer</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">documentation</span>
+  <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">other</span> <span class="n">materials</span> <span class="n">provided</span> <span class="k">with</span> <span class="n">the</span> <span class="n">distribution</span><span class="o">.</span>
+
+<span class="o">*</span> <span class="n">Neither</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">copyright</span> <span class="n">holder</span> <span class="n">nor</span> <span class="n">the</span> <span class="n">names</span> <span class="n">of</span> <span class="n">its</span>
+  <span class="n">contributors</span> <span class="n">may</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">endorse</span> <span class="ow">or</span> <span class="n">promote</span> <span class="n">products</span> <span class="n">derived</span> <span class="kn">from</span>
+<span class="w">  </span><span class="nn">this</span> <span class="n">software</span> <span class="n">without</span> <span class="n">specific</span> <span class="n">prior</span> <span class="n">written</span> <span class="n">permission</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="creating-digital-object-identifiers-doi-with-zenodo">
+<h2>2. Creating Digital Object Identifiers (DOI) with Zenodo<a class="headerlink" href="#creating-digital-object-identifiers-doi-with-zenodo" title="Permalink to this heading">#</a></h2>
+<p>To now associate your newly created course materials and properly credit your work, you want to create a unique Digital Object Identifiers (DOI).
 The best way to create a DOI for your GitHub Pages website is to use Zenodo.
 <a class="reference external" href="https://zenodo.org/">Zenodo</a> has a native integration with GitHub that automatically archives your repository and mints a DOI whenever you create a “Release”. Meaning with each new version, e.g. a new iteration of your course, you can point people to the exact materials you worked. This is the industry standard for making code and static sites citable.
 Here is the step-by-step process to set this up correctly for APA citations.</p>
+</section>
 <section id="prepare-your-repository">
-<h2>1. Prepare Your Repository<a class="headerlink" href="#prepare-your-repository" title="Permalink to this heading">#</a></h2>
+<h2>2. Prepare Your Repository<a class="headerlink" href="#prepare-your-repository" title="Permalink to this heading">#</a></h2>
 <p>Before creating the DOI, add a <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> file to your repository. This file tells citation managers (like Zotero) and GitHub exactly how to format the citation.
 Create a file named <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> in your root/base directory, meaning the lowest level of your folder structure:</p>
 <p><img alt="CFF file" src="../static/add_citation_file.png" /></p>
@@ -485,7 +513,7 @@ Otherwise, leave the “orcid” line as it is or quickly create one <a class="r
 </section>
 <hr class="docutils" />
 <section id="connect-github-to-zenodo">
-<h2>2. Connect GitHub to Zenodo<a class="headerlink" href="#connect-github-to-zenodo" title="Permalink to this heading">#</a></h2>
+<h2>3. Connect GitHub to Zenodo<a class="headerlink" href="#connect-github-to-zenodo" title="Permalink to this heading">#</a></h2>
 <p>Go to Zenodo.org and log in using your GitHub account.
 Navigate to the GitHub Settings area (dropdown menu top right &gt; GitHub).</p>
 <p><img alt="CFF file" src="../static/zenodo_git.png" /></p>
@@ -493,7 +521,7 @@ Navigate to the GitHub Settings area (dropdown menu top right &gt; GitHub).</p>
 <p><img alt="CFF file" src="../static/zenodo_repos.png" /></p>
 </section>
 <section id="mint-the-doi-create-a-release">
-<h2>3. Mint the DOI (Create a Release)<a class="headerlink" href="#mint-the-doi-create-a-release" title="Permalink to this heading">#</a></h2>
+<h2>4. Mint the DOI (Create a Release)<a class="headerlink" href="#mint-the-doi-create-a-release" title="Permalink to this heading">#</a></h2>
 <p>Zenodo does not issue the DOI until you make a formal “Release” on GitHub. Go back to your repository on GitHub.
 <em>Click Releases (usually on the right sidebar) and create a <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">release</span></code>.</em></p>
 <p><img alt="CFF file" src="../static/releases_view.png" /></p>
@@ -501,7 +529,7 @@ Navigate to the GitHub Settings area (dropdown menu top right &gt; GitHub).</p>
 <p><img alt="CFF file" src="../static/create_release.png" /></p>
 </section>
 <section id="apa-citation-format">
-<h2>4. APA Citation Format<a class="headerlink" href="#apa-citation-format" title="Permalink to this heading">#</a></h2>
+<h2>5. APA Citation Format<a class="headerlink" href="#apa-citation-format" title="Permalink to this heading">#</a></h2>
 <p>Once the process is complete, you can provide the following APA citation on your website:
 Format:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Author</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span> <span class="n">A</span><span class="o">.</span> <span class="p">(</span><span class="n">Year</span><span class="p">)</span><span class="o">.</span> <span class="n">Title</span> <span class="n">of</span> <span class="n">software</span> <span class="ow">or</span> <span class="n">website</span> <span class="p">(</span><span class="n">Version</span> <span class="mf">1.0</span><span class="p">)</span> <span class="p">[</span><span class="n">Computer</span> <span class="n">software</span><span class="p">]</span><span class="o">.</span> <span class="n">Zenodo</span><span class="o">.</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">doi</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="mf">10.</span><span class="n">xxxx</span><span class="o">/</span><span class="n">zenodo</span><span class="o">.</span><span class="n">xxxxxx</span>
@@ -509,34 +537,10 @@ Format:</p>
 </div>
 </section>
 <section id="doi-badge">
-<h2>5. DOI Badge<a class="headerlink" href="#doi-badge" title="Permalink to this heading">#</a></h2>
+<h2>6. DOI Badge<a class="headerlink" href="#doi-badge" title="Permalink to this heading">#</a></h2>
 <p>After completing Step 3, go back to your repository page on <code class="docutils literal notranslate"><span class="pre">Zenodo</span></code>. You will see a <code class="docutils literal notranslate"><span class="pre">DOI</span> <span class="pre">badge</span></code> (a small logo). Copy the <code class="docutils literal notranslate"><span class="pre">Markdown</span> <span class="pre">code</span></code> for this badge and paste it at the top of your GitHub <code class="docutils literal notranslate"><span class="pre">README.md</span></code>. This allows visitors to click one button to get the citation info.</p>
 <p><img alt="CFF file" src="../static/doi_button.png" /></p>
 <p><img alt="CFF file" src="../static/doi_button_markdown.png" /></p>
-</section>
-<section id="licensing">
-<h2>6. Licensing<a class="headerlink" href="#licensing" title="Permalink to this heading">#</a></h2>
-<section id="the-license">
-<h3>The LICENSE<a class="headerlink" href="#the-license" title="Permalink to this heading">#</a></h3>
-<p>Now you want to additionally define what and who can use, reproduce, or adapt your materials. For this, we use specific Licenses (you can find the different iterations [here](link to shit))
-The course template already contains a BSD 3-Clause License. You’ll find the stipulations below. Feel free to modify the LICENSE file as needed, provided you comply with the terms outlined in our license.</p>
-<p><img alt="depicting the LICENSE of the course template" src="../static/license.png" /></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Redistribution</span> <span class="ow">and</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">binary</span> <span class="n">forms</span><span class="p">,</span> <span class="k">with</span> <span class="ow">or</span> <span class="n">without</span>
-<span class="n">modification</span><span class="p">,</span> <span class="n">are</span> <span class="n">permitted</span> <span class="n">provided</span> <span class="n">that</span> <span class="n">the</span> <span class="n">following</span> <span class="n">conditions</span> <span class="n">are</span> <span class="n">met</span><span class="p">:</span>
-
-<span class="o">*</span> <span class="n">Redistributions</span> <span class="n">of</span> <span class="n">source</span> <span class="n">code</span> <span class="n">must</span> <span class="n">retain</span> <span class="n">the</span> <span class="n">above</span> <span class="n">copyright</span> <span class="n">notice</span><span class="p">,</span> <span class="n">this</span>
-  <span class="nb">list</span> <span class="n">of</span> <span class="n">conditions</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">following</span> <span class="n">disclaimer</span><span class="o">.</span>
-
-<span class="o">*</span> <span class="n">Redistributions</span> <span class="ow">in</span> <span class="n">binary</span> <span class="n">form</span> <span class="n">must</span> <span class="n">reproduce</span> <span class="n">the</span> <span class="n">above</span> <span class="n">copyright</span> <span class="n">notice</span><span class="p">,</span>
-  <span class="n">this</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">conditions</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">following</span> <span class="n">disclaimer</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">documentation</span>
-  <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">other</span> <span class="n">materials</span> <span class="n">provided</span> <span class="k">with</span> <span class="n">the</span> <span class="n">distribution</span><span class="o">.</span>
-
-<span class="o">*</span> <span class="n">Neither</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">copyright</span> <span class="n">holder</span> <span class="n">nor</span> <span class="n">the</span> <span class="n">names</span> <span class="n">of</span> <span class="n">its</span>
-  <span class="n">contributors</span> <span class="n">may</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">endorse</span> <span class="ow">or</span> <span class="n">promote</span> <span class="n">products</span> <span class="n">derived</span> <span class="kn">from</span>
-<span class="w">  </span><span class="nn">this</span> <span class="n">software</span> <span class="n">without</span> <span class="n">specific</span> <span class="n">prior</span> <span class="n">written</span> <span class="n">permission</span><span class="o">.</span>
-</pre></div>
-</div>
-</section>
 </section>
 </section>
 
@@ -604,15 +608,16 @@ The course template already contains a BSD 3-Clause License. You’ll find the s
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-your-repository">1. Prepare Your Repository</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-github-to-zenodo">2. Connect GitHub to Zenodo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mint-the-doi-create-a-release">3. Mint the DOI (Create a Release)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-citation-format">4. APA Citation Format</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doi-badge">5. DOI Badge</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#licensing">6. Licensing</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#licensing">1. Licensing</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-license">The LICENSE</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-digital-object-identifiers-doi-with-zenodo">2. Creating Digital Object Identifiers (DOI) with Zenodo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-your-repository">2. Prepare Your Repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-github-to-zenodo">3. Connect GitHub to Zenodo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mint-the-doi-create-a-release">4. Mint the DOI (Create a Release)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-citation-format">5. APA Citation Format</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doi-badge">6. DOI Badge</a></li>
 </ul>
   </nav></div>
 
