@@ -38,7 +38,7 @@ Before creating the DOI, add a `CITATION.cff` file to your repository. This file
 Create a file named `CITATION.cff` in your root/base directory, meaning the lowest level of your folder structure:
 
 
-![CFF file](../../static/add_citation_file.png)
+![CFF file](../static/add_citation_file.png)
 
 
 Add the following, and replace the placeholder values with your name, the url to your repo and so on. If you already have an Orcid ID, you can add the link, as well. 
@@ -46,7 +46,7 @@ Add the following, and replace the placeholder values with your name, the url to
 > [!NOTE]
 > Otherwise, leave the “orcid” line as it is or quickly create one [here](https://orcid.org/). I highly encourage you to do so, as this will provide you with a unique, permanent ID that ensures you can credit your materials and distinguishes your work from anyone else with a similar name.
 
-![CFF file](../../static/orcid_pic.png)
+![CFF file](../static/orcid_pic.png)
 
 
 Paste this:
@@ -71,23 +71,23 @@ url: "https://yourusername.github.io/your-repo"
 Go to Zenodo.org and log in using your GitHub account.
 Navigate to the GitHub Settings area (dropdown menu top right > GitHub).
 
-![CFF file](../../static/zenodo_git.png)
+![CFF file](../static/zenodo_git.png)
 
 You will see a list of your repositories. Flip the switch to ON for the repository you want to be citable.
 
-![CFF file](../../static/zenodo_repos.png)
+![CFF file](../static/zenodo_repos.png)
 
   
 ## 4. Mint the DOI (Create a Release)
 Zenodo does not issue the DOI until you make a formal "Release" on GitHub. Go back to your repository on GitHub.
 *Click Releases (usually on the right sidebar) and create a `new release`.*
 
-![CFF file](../../static/releases_view.png)
+![CFF file](../static/releases_view.png)
 
 
 Create a `tag` (e.g., v1.0.0), add a `title`, and click `Publish Release`. Zenodo will now automatically archive a snapshot of your code and generate a DOI.
 
-![CFF file](../../static/create_release.png)
+![CFF file](../static/create_release.png)
 
 ## 5. APA Citation Format
 Once the process is complete, you can provide the following APA citation on your website:
@@ -100,9 +100,9 @@ Author, A. A. (Year). Title of software or website (Version 1.0) [Computer softw
 
 After completing Step 3, go back to your repository page on `Zenodo`. You will see a `DOI badge` (a small logo). Copy the `Markdown code` for this badge and paste it at the top of your GitHub `README.md`. This allows visitors to click one button to get the citation info.
 
-![CFF file](../../static/doi_button.png)
+![CFF file](../static/doi_button.png)
 
-![CFF file](../../static/doi_button_markdown.png)
+![CFF file](../static/doi_button_markdown.png)
 
 
 
