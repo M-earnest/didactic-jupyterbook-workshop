@@ -4,7 +4,7 @@
 Take the next 20 minutes to sketch a first concept for your own course. You can do so either on your own, or find a partner and follow our guide on [Working Collaboratively](https://m-earnest.github.io/didactic-jupyterbook-workshop/general-information/contributions_collabs.html). Focus especially on didactic aspects: not just _what_ you want to teach, but _how_ and _why_. The following guiding questions can help:
 
 > [!NOTE]
-> If you can't think of a particular course or topic to teach, remember that our format is content agnostic, meaning you can also choose to create a publication, paper companions, lab-notebooks, and so on.
+> If you can't think of a particular course or topic to teach, remember that our format is content agnostic, meaning you can also choose to create a publication, paper companions, lab-notebooks, and so on. E.g., here I created a landing page for participant recruitment: [GH-flyer Dryhads](https://m-earnest.github.io/drhyads_meg_study/general_information/index.html).
 
 
 1. What should participants know or be able to do at the end of my course?
