@@ -17,7 +17,7 @@ Now, there are two ways to continue. We can either "fork" our existing template 
 
 Let's copy our ready-to-go course template! It’s the quickest way to get started — simply customize and add your own pages to fit your content, without worrying about setting up a project from scratch. 
 
-1\. Go to the GitHub page of our [course template](https://github.com/luciebinder/course-template-minimal) and click on "fork".
+1\. Go to the GitHub page of our [course template](https://github.com/DiLER-Digitell/course-template-minimal) and click on "fork".
 
 ![depicting position a look of the fork button on a GitHub repository](../../static/fork-button.png)
 
@@ -121,7 +121,7 @@ When you open it, you should see the welcome page to your website. On the left s
 ![Image of the built website.](../../static/new-website.png)
 
 
-## 5. [Edit and create files](https://luciebinder.github.io/ws-openness-2025/content/1_github/template.html#make-your-first-adjustments)
+## 5. [Edit and create files]
 
 ### 5.1 Edit your first file: the config file
 Let's edit your first file, the `_config.yml` file! Here, you'll update the course title, authors' names, affiliations, and other key details to make the template your own.
